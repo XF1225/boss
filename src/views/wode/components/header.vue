@@ -11,7 +11,7 @@
           <h2>张秋千</h2>
           <p :style="header1"><span class="iconfont">&#xe63a;</span>我的在线简历</p>
         </div>
-        <div class="userimg" :style="header1"><img src="@/assets/imgs/006.jpg"></div>
+        <div class="userimg" :style="header1"><img src="imgs/006.jpg"></div>
       </div>
       <div class="header-desc">
         <li v-for="item of userdesc" :key="item.id" :style="header1">

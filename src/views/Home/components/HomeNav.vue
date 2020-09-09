@@ -9,6 +9,7 @@
           </div>
           <div class="nav-right">
             <div class="right-content">
+              <li :class="{'activeli':isactiveli}" @click="citychoiceclick"><span>上海</span><i></i></li>
               <li v-for="item of navright" :key="item.id" @click="navrightclick(item.id)"><span>{{item.name}}</span><i></i></li>
             </div>
           </div>
@@ -18,6 +19,7 @@
     </div>
 </template>
 <script>
+import { Bus } from '@/assets/js/bus'
 export default {
   name: 'HomeNav',
   data () {
@@ -29,26 +31,47 @@ export default {
       ],
       num: 0,
       navright: [
-        { id: 'nav04', name: '上海' },
         { id: 'nav05', name: '筛选' },
         { id: 'nav06', name: '关键词' }
       ],
-      showgengxin: true
+      showgengxin: true,
+      isactiveli: false
     }
   },
   methods: {
     navleftclick (index) {
       this.num = index
+      switch (this.navleft[index].id) {
+        case 'nav01':
+          Bus.$emit('checknums', true)
+          break
+        case 'nav02':
+          Bus.$emit('checknums', true)
+          break
+        case 'nav03':
+          Bus.$emit('checknums', true)
+          break
+      }
     },
     navrightclick (id) {
-      if (id === 'nav05') {
-        this.$router.push('/shaixuan')
+      switch (id) {
+        case 'nav05':
+          this.$router.push('/shaixuan')
+          break
+        case 'nav06':
+          this.$router.push('/guanjianci')
+          break
       }
+    },
+    citychoiceclick () {
+      this.$router.push('/citychoice')
+      this.isactiveli = !this.isactiveli
     }
   }
 }
 </script>
 <style lang="stylus" scoped>
+@import '../../../assets/css/common.styl'
 .HomeNavCont
   width 100%
   height 1rem
@@ -111,6 +134,8 @@ export default {
         height 0
         border-bottom .15rem solid rgb(202,202,202)
         border-left .15rem solid transparent
+      .activeli
+        color $bgColor
 .kong
   width 100%
   height 1rem

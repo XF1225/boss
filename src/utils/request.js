@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'development') {
   apiUrl = '/api'
 } else if (process.env.NODE_ENV === 'production') {
   console.log('当前环境，生产环境')
-  apiUrl = 'http:// **.**.**.**:***/api' // 接口地址
+  apiUrl = 'http://localhost:8080/api' // 接口地址
 }
 
 const service = axios.create({
@@ -52,5 +52,22 @@ service.interceptors.response.use(
     return error
   }
 )
-
 export default service
+/**
+ * 封装get方法
+ * @param url
+ * @param data
+ * @returns {Promise}
+ * axois封装出处：https://www.cnblogs.com/ldlx-mars/p/7908950.html
+ */
+export function getdata (url, params) {
+  return new Promise((resolve, reject) => {
+    axios.get(url, {
+      params: params
+    }).then(response => {
+      resolve(response.data)
+    }).catch(err => {
+      reject(err)
+    })
+  })
+}

@@ -19,7 +19,7 @@
           <div class="kgw-zhaopin">
             <div class="zp-left">
               <div>
-                <img src="@/assets/imgs/006.jpg">
+                <img src="imgs/006.jpg">
                 <i class="iconfont icon-vip"></i>
               </div>
               <p>赵洋洋.招聘专员</p>

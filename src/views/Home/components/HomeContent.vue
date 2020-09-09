@@ -1,7 +1,7 @@
 <template>
   <div class="HomeContent">
     <div>
-      <div class="scroll-img" v-show="showscrollimg"><img src="@/assets/imgs/loading.gif"></div>
+      <div class="scroll-img" v-show="showscrollimg"><img src="imgs/loading.gif"></div>
       <div class="wrapper">
         <div class="cont-detail" v-for="item of HomeContent" :key="item.id">
           <div class="cont-main" @click="tocontdetail(item.id)">
@@ -19,7 +19,7 @@
             <div class="cont-name">
               <div class="cont-left">
                 <div class="cont-img">
-                  <img src="@/assets/imgs/006.jpg">
+                  <img src="imgs/006.jpg">
                   <i class="iconfont zhuanshi">&#xe61d;</i>
                 </div>
                 <p class="cont-p">{{item.contp}}</p>
@@ -43,191 +43,15 @@ export default {
   data () {
     return {
       showscrollimg: false,
-      HomeContent: [
-        {
-          id: '1001',
-          conttitle: '中级前端工程师',
-          contprice: '11-14K',
-          contkeys: ['3-5年', '大专', 'JavaScript', 'Webpack', 'HTML'],
-          contconp: '网联商务',
-          conpnum: '100-499人',
-          contp: '张亚茹.人事专员',
-          area: '北京'
-        },
-        {
-          id: '1002',
-          conttitle: '移动端开发工程师',
-          contprice: '10-15K',
-          contkeys: ['1-3年', '大专', '移动端', '小程序', 'Android'],
-          contconp: '天津图灵健康 未融资',
-          conpnum: '0-20人',
-          contp: '孙颖.人力资源',
-          area: '天津 武清区 北郊'
-        },
-        {
-          id: '1003',
-          conttitle: 'WEB前端开发工程师',
-          contprice: '9-14K',
-          contkeys: ['1-3年', '大专', 'saas软件', '小程序', 'JavaScript'],
-          contconp: '上海三高计算机 已上市',
-          conpnum: '500-999人',
-          contp: 'Ariei.人事',
-          area: '上海'
-        },
-        {
-          id: '1004',
-          conttitle: '前端工程师',
-          contprice: '10-15K',
-          contkeys: ['5-10年', '本科', 'JavaScript', 'Vue.js', 'CSS3'],
-          contconp: '直真科技 未融资',
-          conpnum: '500-999人',
-          contp: '文盼.招聘者',
-          area: '重庆 江北区 观音桥'
-        },
-        {
-          id: '1005',
-          conttitle: 'web前端工程师',
-          contprice: '10-15K',
-          contkeys: ['1-3年', '大专', 'Webpack', 'ES6', 'Vue.js'],
-          contconp: '维度云医 不需要融资',
-          conpnum: '1000-9999人',
-          contp: '郑女士.HR',
-          area: '哈尔滨 道里区'
-        },
-        {
-          id: '1006',
-          conttitle: '前端工程师',
-          contprice: '4-6K',
-          contkeys: ['经验不限', '学历不限', 'JavaScript', 'ES6', 'jQuery'],
-          contconp: '林谷科技',
-          conpnum: '0-20人',
-          contp: 'sunny.人事专员',
-          area: '吉林 昌邑区'
-        },
-        {
-          id: '1007',
-          conttitle: '微信小程序开发',
-          contprice: '10-13K',
-          contkeys: ['3-5年', '中专/技校', '小程序', 'CSS3'],
-          contconp: '斑马数据',
-          conpnum: '20-99人',
-          contp: '王利达.经理',
-          area: '沈阳 沈河区 市府'
-        },
-        {
-          id: '1008',
-          conttitle: 'web前端（乌兰察布）',
-          contprice: '10-15K',
-          contkeys: ['5-10年', '本科', '后端开发', 'jQuery', 'H5'],
-          contconp: '贵州东方国信 未融资',
-          conpnum: '1000-9999人',
-          contp: '刘璇.人资专员',
-          area: '呼和浩特'
-        },
-        {
-          id: '1009',
-          conttitle: '前端工程师',
-          contprice: '8-12K',
-          contkeys: ['3-5年', '本科', 'Webpack', 'ES6', 'CSS3'],
-          contconp: '路上餐饮集团 不需要融资',
-          conpnum: '1000-9999人',
-          contp: '贾女士.招聘主管',
-          area: '乌鲁木齐'
-        },
-        {
-          id: '1010',
-          conttitle: '网页前端设计',
-          contprice: '8-13K',
-          contkeys: ['3-5年', '大专', 'JavaScript', 'CSS3', 'HTML'],
-          contconp: '兴睿网络',
-          conpnum: '0-20人',
-          contp: '阳春花.经理',
-          area: '西宁 城西区'
-        },
-        {
-          id: '1011',
-          conttitle: 'web前端工程师',
-          contprice: '8-12K',
-          contkeys: ['3-5年', '本科', 'JavaScript', 'React', 'HTML'],
-          contconp: '威力传动',
-          conpnum: '100-499人',
-          contp: '张先生.项目经理',
-          area: '银川 西夏区'
-        },
-        {
-          id: '1012',
-          conttitle: '前端开发工程师',
-          contprice: '14-20K',
-          contkeys: ['3-5年', '本科', 'JavaScript', '网络协议', 'HTML'],
-          contconp: '中软国际 已上市',
-          conpnum: '10000人以上',
-          contp: '胥虹颖.招聘主管',
-          area: '兰州 城关区'
-        },
-        {
-          id: '1013',
-          conttitle: '高级前端开发工程师',
-          contprice: '12-18K.15薪',
-          contkeys: ['5-10年', '大专', 'Webpack', 'H5', 'Gulp'],
-          contconp: '畅移信息 B轮',
-          conpnum: '100-499人',
-          contp: '魏颖慧.HRBP',
-          area: '西安'
-        },
-        {
-          id: '1014',
-          conttitle: '前端开发工程师',
-          contprice: '10-15K.14薪',
-          contkeys: ['5-10年', '本科', '后端开发', 'ES6', '数据交互'],
-          contconp: '深大智能 C轮',
-          conpnum: '500-999人',
-          contp: '梁女士.招聘专家',
-          area: '太原'
-        },
-        {
-          id: '1015',
-          conttitle: 'web前端',
-          contprice: '8-12K',
-          contkeys: ['1-3年', '大专', 'HTML', 'ES6', 'JavaScript'],
-          contconp: '华腾 未融资',
-          conpnum: '20-99人',
-          contp: '周阳.互联网运营经理',
-          area: '石家庄'
-        },
-        {
-          id: '1016',
-          conttitle: 'web前端',
-          contprice: '8-12K',
-          contkeys: ['3-5年', '大专', 'JavaScript', 'ES6', 'Webpack'],
-          contconp: '犇犇科技 不需要融资',
-          conpnum: '100-499人',
-          contp: '范经理',
-          area: '郑州 二七区 大学路'
-        },
-        {
-          id: '1017',
-          conttitle: '前端开发工程师',
-          contprice: '15-20K',
-          contkeys: ['经验不限', '本科', 'JavaScript', '软件', '混合开发'],
-          contconp: '山东瑞合 不需要融资',
-          conpnum: '20-99人',
-          contp: '冯承敏.人力资源主管',
-          area: '济南'
-        },
-        {
-          id: '1018',
-          conttitle: '前端开发工程师',
-          contprice: '8-12K',
-          contkeys: ['5-10年', '本科', 'CSS3', 'AJAX', 'jQuery'],
-          contconp: '城市云',
-          conpnum: '100-499人',
-          contp: '黄磊.HRBP',
-          area: '合肥'
-        }
-      ]
+      HomeContent: []
     }
   },
   methods: {
+    getdata () {
+      this.$getdata('/api/mock.json').then(res => {
+        this.HomeContent = res.HomeContent
+      })
+    },
     tocontdetail (id) {
       this.$router.push(`/jobsdetail/${id}`)
       window.scrollTo(0, 0)
@@ -261,6 +85,7 @@ export default {
   },
   mounted () {
     this.initscroll()
+    this.getdata()
     Bus.$on('checknums', (checknum) => {
       if (checknum !== 0) {
         this.showscrollimg = true
@@ -269,6 +94,16 @@ export default {
           Bus.$emit('changegengxin', true)
         }, 2000)
       }
+      this.HomeContent = []
+      setTimeout(() => {
+        this.getdata()
+      }, 1000)
+    })
+    Bus.$on('scrollimg', () => {
+      this.showscrollimg = true
+      setTimeout(() => {
+        this.showscrollimg = false
+      }, 2000)
     })
   }
 }

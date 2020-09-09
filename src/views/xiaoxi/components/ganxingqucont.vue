@@ -1,6 +1,6 @@
 <template>
   <div class="ganxingqucont">
-    <div class="gxq-img"><img src="@/assets/imgs/ganxingqu.png"></div>
+    <div class="gxq-img"><img src="imgs/ganxingqu.png"></div>
     <h5 class="gxq-h5">还没有Boss对你感兴趣哦，快去主动联系吧！</h5>
     <div class="zhaozhiwei">
       <p>找职位</p>

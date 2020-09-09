@@ -4,7 +4,7 @@
       <div class="dangqian">
         <h3 class="dangqian-h3">当前城市</h3>
         <div class="dangqian-desc" @click="toup">
-          <span>{{this.city}}</span>
+          <span>{{city}}</span>
         </div>
       </div>
       <div class="remen" v-for="(item,index) of hotcity" :key="index">

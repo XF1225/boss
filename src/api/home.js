@@ -1,13 +1,13 @@
 import request from '@/utils/request'
 // 接口1
-export function getindexCard (str) {
+export function getmockdata () {
   return request({
-    url: '/Stat/StatUseP_Tody' + str
+    url: '/api/mock.json'
   })
 }
 // 接口2
-export function getUseEleTrend (str) {
+/* export function getUseEleTrend (str) {
   return request({
     url: '/Stat/Stat_UseP' + str
   })
-}
+} */

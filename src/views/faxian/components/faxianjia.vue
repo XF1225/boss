@@ -1,7 +1,7 @@
 <template>
-  <div class="faxianjia">
+  <router-link tag="div" to="/faxianjia" class="faxianjia">
     <span class="iconfont">&#xe627;</span>
-  </div>
+  </router-link>
 </template>
 
 <script>

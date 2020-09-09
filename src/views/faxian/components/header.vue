@@ -8,7 +8,7 @@
           <input type="text" class="faxian-text" placeholder="搜索职位/公司/知识点" @click="tosousuozhiwei">
         </div>
         <span class="iconfont icon-xiaoxi">&#xe618;</span>
-        <div class="userimg"><img src="@/assets/imgs/006.jpg"></div>
+        <div class="userimg"><img src="imgs/006.jpg"></div>
       </div>
     </div>
     <div class="kong"></div>

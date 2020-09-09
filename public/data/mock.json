@@ -1,805 +1,1491 @@
 {
-    "HomeContent": [
-        {
-          "id": "1001",
-          "conttitle": "中级前端工程师",
-          "contprice": "11-14K",
-          "contkeys": ["3-5年", "大专", "JavaScript", "Webpack", "HTML"],
-          "contconp": "网联商务",
-          "conpnum": "100-499人",
-          "contp": "张亚茹.人事专员",
-          "area": "北京"
-        },
-        {
-          "id": "1002",
-          "conttitle": "移动端开发工程师",
-          "contprice": "10-15K",
-          "contkeys": ["1-3年", "大专", "移动端", "小程序", "Android"],
-          "contconp": "天津图灵健康 未融资",
-          "conpnum": "0-20人",
-          "contp": "孙颖.人力资源",
-          "area": "天津 武清区 北郊"
-        },
-        {
-          "id": "1003",
-          "conttitle": "WEB前端开发工程师",
-          "contprice": "9-14K",
-          "contkeys": ["1-3年", "大专", "saas软件", "小程序", "JavaScript"],
-          "contconp": "上海三高计算机 已上市",
-          "conpnum": "500-999人",
-          "contp": "Ariei.人事",
-          "area": "上海"
-        },
-        {
-          "id": "1004",
-          "conttitle": "前端工程师",
-          "contprice": "10-15K",
-          "contkeys": ["5-10年", "本科", "JavaScript", "Vue.js", "CSS3"],
-          "contconp": "直真科技 未融资",
-          "conpnum": "500-999人",
-          "contp": "文盼.招聘者",
-          "area": "重庆 江北区 观音桥"
-        },
-        {
-          "id": "1005",
-          "conttitle": "web前端工程师",
-          "contprice": "10-15K",
-          "contkeys": ["1-3年", "大专", "Webpack", "ES6", "Vue.js"],
-          "contconp": "维度云医 不需要融资",
-          "conpnum": "1000-9999人",
-          "contp": "郑女士.HR",
-          "area": "哈尔滨 道里区"
-        },
-        {
-          "id": "1006",
-          "conttitle": "前端工程师",
-          "contprice": "4-6K",
-          "contkeys": ["经验不限", "学历不限", "JavaScript", "ES6", "jQuery"],
-          "contconp": "林谷科技",
-          "conpnum": "0-20人",
-          "contp": "sunny.人事专员",
-          "area": "吉林 昌邑区"
-        },
-        {
-          "id": "1007",
-          "conttitle": "微信小程序开发",
-          "contprice": "10-13K",
-          "contkeys": ["3-5年", "中专/技校", "小程序", "CSS3"],
-          "contconp": "斑马数据",
-          "conpnum": "20-99人",
-          "contp": "王利达.经理",
-          "area": "沈阳 沈河区 市府"
-        },
-        {
-          "id": "1008",
-          "conttitle": "web前端（乌兰察布）",
-          "contprice": "10-15K",
-          "contkeys": ["5-10年", "本科", "后端开发", "jQuery", "H5"],
-          "contconp": "贵州东方国信 未融资",
-          "conpnum": "1000-9999人",
-          "contp": "刘璇.人资专员",
-          "area": "呼和浩特"
-        },
-        {
-          "id": "1009",
-          "conttitle": "前端工程师",
-          "contprice": "8-12K",
-          "contkeys": ["3-5年", "本科", "Webpack", "ES6", "CSS3"],
-          "contconp": "路上餐饮集团 不需要融资",
-          "conpnum": "1000-9999人",
-          "contp": "贾女士.招聘主管",
-          "area": "乌鲁木齐"
-        },
-        {
-          "id": "1010",
-          "conttitle": "网页前端设计",
-          "contprice": "8-13K",
-          "contkeys": ["3-5年", "大专", "JavaScript", "CSS3", "HTML"],
-          "contconp": "兴睿网络",
-          "conpnum": "0-20人",
-          "contp": "阳春花.经理",
-          "area": "西宁 城西区"
-        },
-        {
-          "id": "1011",
-          "conttitle": "web前端工程师",
-          "contprice": "8-12K",
-          "contkeys": ["3-5年", "本科", "JavaScript", "React", "HTML"],
-          "contconp": "威力传动",
-          "conpnum": "100-499人",
-          "contp": "张先生.项目经理",
-          "area": "银川 西夏区"
-        },
-        {
-          "id": "1012",
-          "conttitle": "前端开发工程师",
-          "contprice": "14-20K",
-          "contkeys": ["3-5年", "本科", "JavaScript", "网络协议", "HTML"],
-          "contconp": "中软国际 已上市",
-          "conpnum": "10000人以上",
-          "contp": "胥虹颖.招聘主管",
-          "area": "兰州 城关区"
-        },
-        {
-          "id": "1013",
-          "conttitle": "高级前端开发工程师",
-          "contprice": "12-18K.15薪",
-          "contkeys": ["5-10年", "大专", "Webpack", "H5", "Gulp"],
-          "contconp": "畅移信息 B轮",
-          "conpnum": "100-499人",
-          "contp": "魏颖慧.HRBP",
-          "area": "西安"
-        },
-        {
-          "id": "1014",
-          "conttitle": "前端开发工程师",
-          "contprice": "10-15K.14薪",
-          "contkeys": ["5-10年", "本科", "后端开发", "ES6", "数据交互"],
-          "contconp": "深大智能 C轮",
-          "conpnum": "500-999人",
-          "contp": "梁女士.招聘专家",
-          "area": "太原"
-        },
-        {
-          "id": "1015",
-          "conttitle": "web前端",
-          "contprice": "8-12K",
-          "contkeys": ["1-3年", "大专", "HTML", "ES6", "JavaScript"],
-          "contconp": "华腾 未融资",
-          "conpnum": "20-99人",
-          "contp": "周阳.互联网运营经理",
-          "area": "石家庄"
-        },
-        {
-          "id": "1016",
-          "conttitle": "web前端",
-          "contprice": "8-12K",
-          "contkeys": ["3-5年", "大专", "JavaScript", "ES6", "Webpack"],
-          "contconp": "犇犇科技 不需要融资",
-          "conpnum": "100-499人",
-          "contp": "范经理",
-          "area": "郑州 二七区 大学路"
-        },
-        {
-          "id": "1017",
-          "conttitle": "前端开发工程师",
-          "contprice": "15-20K",
-          "contkeys": ["经验不限", "本科", "JavaScript", "软件", "混合开发"],
-          "contconp": "山东瑞合 不需要融资",
-          "conpnum": "20-99人",
-          "contp": "冯承敏.人力资源主管",
-          "area": "济南"
-        },
-        {
-          "id": "1018",
-          "conttitle": "前端开发工程师",
-          "contprice": "8-12K",
-          "contkeys": ["5-10年", "本科", "CSS3", "AJAX", "jQuery"],
-          "contconp": "城市云",
-          "conpnum": "100-499人",
-          "contp": "黄磊.HRBP",
-          "area": "合肥"
-        }
-    ],
-    "faxiancontent": [
-        {
-          "id": "F001",
-          "rticon": "iconfont icon-1",
-          "rttitle": "优质内容",
-          "titleleft": "Java工程师面试考点",
-          "iconmore": "iconfont icon-more",
-          "userimg": "require(@/assets/imgs/006.jpg)",
-          "iconvip": "iconfont icon-vip",
-          "userdis": "黄俊凯",
-          "usertitle": "Java 3年",
-          "faxianmain": "JavaScript的标准是ECMAScript 。截至 2012 年，所有浏览器都完整的支持ECMAScript 5.1，旧版本的浏览器至少支持ECMAScript 3 标准。2015年6月17日，ECMA国际组织发布了ECMAScript的第六版，该版本正式名称为 ECMAScript 2015，但通常被称为ECMAScript 6 或者ES6。",
-          "defaultcha1": "查看更多>>",
-          "defaultcha2": "收起",
-          "chakan": true,
-          "showcha": true,
-          "iswenda": true,
-          "wen": "问",
-          "tiwen": "面试官问'对JavaScript的理解'时，该怎么回答？",
-          "huida": "已有63个回答",
-          "youbian": "iconfont icon-youbian",
-          "ishas": false,
-          "maintitle": "",
-          "maincontent": [],
-          "dianzan": "iconfont icon-icon_good",
-          "dianzannum": "639",
-          "icondesc": "iconfont icon-xiaoxi2",
-          "contwen": "我来回答",
-          "iconxin": "iconfont icon-bixin",
-          "iconxintitle": "Get"
-        },
-        {
-          "id": "F002",
-          "rticon": "",
-          "rttitle": "",
-          "titleleft": "ios常见面试题",
-          "iconmore": "iconfont icon-more",
-          "userimg": "require(@/assets/imgs/006.jpg)",
-          "iconvip": "iconfont icon-vip",
-          "userdis": "职测",
-          "usertitle": "BOSS直聘.官方",
-          "faxianmain": "",
-          "defaultcha1": "",
-          "chakan": true,
-          "showcha": true,
-          "iswenda": false,
-          "wen": "",
-          "tiwen": "",
+  "HomeContent": [
+      {
+        "id": "1001",
+        "conttitle": "中级前端工程师",
+        "contprice": "11-14K",
+        "contkeys": ["3-5年", "大专", "JavaScript", "Webpack", "HTML"],
+        "contconp": "网联商务",
+        "conpnum": "100-499人",
+        "contp": "张亚茹.人事专员",
+        "area": "北京",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1002",
+        "conttitle": "移动端开发工程师",
+        "contprice": "10-15K",
+        "contkeys": ["1-3年", "大专", "移动端", "小程序", "Android"],
+        "contconp": "天津图灵健康 未融资",
+        "conpnum": "0-20人",
+        "contp": "孙颖.人力资源",
+        "area": "天津 武清区 北郊",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "1-3年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1003",
+        "conttitle": "WEB前端开发工程师",
+        "contprice": "9-14K",
+        "contkeys": ["1-3年", "大专", "saas软件", "小程序", "JavaScript"],
+        "contconp": "上海三高计算机 已上市",
+        "conpnum": "500-999人",
+        "contp": "Ariei.人事",
+        "area": "上海",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "1-3年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1004",
+        "conttitle": "前端工程师",
+        "contprice": "10-15K",
+        "contkeys": ["5-10年", "本科", "JavaScript", "Vue.js", "CSS3"],
+        "contconp": "直真科技 未融资",
+        "conpnum": "500-999人",
+        "contp": "文盼.招聘者",
+        "area": "重庆 江北区 观音桥",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "5-10年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1005",
+        "conttitle": "web前端工程师",
+        "contprice": "10-15K",
+        "contkeys": ["1-3年", "大专", "Webpack", "ES6", "Vue.js"],
+        "contconp": "维度云医 不需要融资",
+        "conpnum": "1000-9999人",
+        "contp": "郑女士.HR",
+        "area": "哈尔滨 道里区",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "1-3年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1006",
+        "conttitle": "前端工程师",
+        "contprice": "4-6K",
+        "contkeys": ["经验不限", "学历不限", "JavaScript", "ES6", "jQuery"],
+        "contconp": "林谷科技",
+        "conpnum": "0-20人",
+        "contp": "sunny.人事专员",
+        "area": "吉林 昌邑区",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "经验不限"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "学历不限"
+          }
+        ]
+      },
+      {
+        "id": "1007",
+        "conttitle": "微信小程序开发",
+        "contprice": "10-13K",
+        "contkeys": ["3-5年", "中专/技校", "小程序", "CSS3"],
+        "contconp": "斑马数据",
+        "conpnum": "20-99人",
+        "contp": "王利达.经理",
+        "area": "沈阳 沈河区 市府",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "中专/技校"
+          }
+        ]
+      },
+      {
+        "id": "1008",
+        "conttitle": "web前端（乌兰察布）",
+        "contprice": "10-15K",
+        "contkeys": ["5-10年", "本科", "后端开发", "jQuery", "H5"],
+        "contconp": "贵州东方国信 未融资",
+        "conpnum": "1000-9999人",
+        "contp": "刘璇.人资专员",
+        "area": "呼和浩特",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "5-10年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1009",
+        "conttitle": "前端工程师",
+        "contprice": "8-12K",
+        "contkeys": ["3-5年", "本科", "Webpack", "ES6", "CSS3"],
+        "contconp": "路上餐饮集团 不需要融资",
+        "conpnum": "1000-9999人",
+        "contp": "贾女士.招聘主管",
+        "area": "乌鲁木齐",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1010",
+        "conttitle": "网页前端设计",
+        "contprice": "8-13K",
+        "contkeys": ["3-5年", "大专", "JavaScript", "CSS3", "HTML"],
+        "contconp": "兴睿网络",
+        "conpnum": "0-20人",
+        "contp": "阳春花.经理",
+        "area": "西宁 城西区",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1011",
+        "conttitle": "web前端工程师",
+        "contprice": "8-12K",
+        "contkeys": ["3-5年", "本科", "JavaScript", "React", "HTML"],
+        "contconp": "威力传动",
+        "conpnum": "100-499人",
+        "contp": "张先生.项目经理",
+        "area": "银川 西夏区",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1012",
+        "conttitle": "前端开发工程师",
+        "contprice": "14-20K",
+        "contkeys": ["3-5年", "本科", "JavaScript", "网络协议", "HTML"],
+        "contconp": "中软国际 已上市",
+        "conpnum": "10000人以上",
+        "contp": "胥虹颖.招聘主管",
+        "area": "兰州 城关区",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1013",
+        "conttitle": "高级前端开发工程师",
+        "contprice": "12-18K.15薪",
+        "contkeys": ["5-10年", "大专", "Webpack", "H5", "Gulp"],
+        "contconp": "畅移信息 B轮",
+        "conpnum": "100-499人",
+        "contp": "魏颖慧.HRBP",
+        "area": "西安",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "5-10年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1014",
+        "conttitle": "前端开发工程师",
+        "contprice": "10-15K.14薪",
+        "contkeys": ["5-10年", "本科", "后端开发", "ES6", "数据交互"],
+        "contconp": "深大智能 C轮",
+        "conpnum": "500-999人",
+        "contp": "梁女士.招聘专家",
+        "area": "太原",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "5-10年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1015",
+        "conttitle": "web前端",
+        "contprice": "8-12K",
+        "contkeys": ["1-3年", "大专", "HTML", "ES6", "JavaScript"],
+        "contconp": "华腾 未融资",
+        "conpnum": "20-99人",
+        "contp": "周阳.互联网运营经理",
+        "area": "石家庄",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "1-3年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1016",
+        "conttitle": "web前端",
+        "contprice": "8-12K",
+        "contkeys": ["3-5年", "大专", "JavaScript", "ES6", "Webpack"],
+        "contconp": "犇犇科技 不需要融资",
+        "conpnum": "100-499人",
+        "contp": "范经理",
+        "area": "郑州 二七区 大学路",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "3-5年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "大专"
+          }
+        ]
+      },
+      {
+        "id": "1017",
+        "conttitle": "前端开发工程师",
+        "contprice": "15-20K",
+        "contkeys": ["经验不限", "本科", "JavaScript", "软件", "混合开发"],
+        "contconp": "山东瑞合 不需要融资",
+        "conpnum": "20-99人",
+        "contp": "冯承敏.人力资源主管",
+        "area": "济南",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "经验不限"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      },
+      {
+        "id": "1018",
+        "conttitle": "前端开发工程师",
+        "contprice": "8-12K",
+        "contkeys": ["5-10年", "本科", "CSS3", "AJAX", "jQuery"],
+        "contconp": "城市云",
+        "conpnum": "100-499人",
+        "contp": "黄磊.HRBP",
+        "area": "合肥",
+        "titlebottom": [
+          {
+            "icon": "iconfont icon-zhaopin_zhichang",
+            "title": "5-10年"
+          },
+          {
+            "icon": "iconfont icon-tianchongxing-",
+            "title": "本科"
+          }
+        ]
+      }
+  ],
+  "faxiancontent": [
+      {
+        "id": "F001",
+        "rticon": "iconfont icon-1",
+        "rttitle": "优质内容",
+        "titleleft": "Java工程师面试考点",
+        "iconmore": "iconfont icon-more",
+        "userimg": "imgs/006.jpg",
+        "iconvip": "iconfont icon-vip",
+        "userdis": "黄俊凯",
+        "usertitle": "Java 3年",
+        "faxianmain": "JavaScript的标准是ECMAScript 。截至 2012 年，所有浏览器都完整的支持ECMAScript 5.1，旧版本的浏览器至少支持ECMAScript 3 标准。2015年6月17日，ECMA国际组织发布了ECMAScript的第六版，该版本正式名称为 ECMAScript 2015，但通常被称为ECMAScript 6 或者ES6。",
+        "defaultcha1": "查看更多>>",
+        "defaultcha2": "收起",
+        "chakan": true,
+        "showcha": true,
+        "iswenda": true,
+        "wen": "问",
+        "tiwen": "面试官问'对JavaScript的理解'时，该怎么回答？",
+        "huida": "已有63个回答",
+        "youbian": "iconfont icon-youbian",
+        "ishas": false,
+        "maintitle": "",
+        "maincontent": [],
+        "dianzan": "iconfont icon-icon_good",
+        "dianzannum": "639",
+        "icondesc": "iconfont icon-xiaoxi2",
+        "contwen": "我来回答",
+        "iconxin": "iconfont icon-bixin",
+        "iconxintitle": "Get"
+      },
+      {
+        "id": "F002",
+        "rticon": "",
+        "rttitle": "",
+        "titleleft": "ios常见面试题",
+        "iconmore": "iconfont icon-more",
+        "userimg": "imgs/006.jpg",
+        "iconvip": "iconfont icon-vip",
+        "userdis": "职测",
+        "usertitle": "BOSS直聘.官方",
+        "faxianmain": "",
+        "defaultcha1": "",
+        "chakan": true,
+        "showcha": true,
+        "iswenda": false,
+        "wen": "",
+        "tiwen": "",
+        "huida": "",
+        "youbian": "",
+        "ishas": true,
+        "maintitle": "触摸事件包括以下哪几种？（多选）",
+        "maincontent": ["touchesBegan", "touchesMoved", "touchesCancelled", "touchesEnded"],
+        "dianzan": "iconfont icon-icon_good",
+        "dianzannum": "96",
+        "icondesc": "iconfont icon-jiahao1",
+        "contwen": "知识点",
+        "iconxin": "iconfont icon-bixin",
+        "iconxintitle": "Get"
+      },
+      {
+        "id": "F003",
+        "rticon": "",
+        "rttitle": "",
+        "titleleft": "HTTP协议",
+        "iconmore": "iconfont icon-more",
+        "userimg": "imgs/006.jpg",
+        "iconvip": "iconfont icon-vip",
+        "userdis": "田贵",
+        "usertitle": "APP测试工程师",
+        "faxianmain": "HTTP请求的GET与POST方式的区别？1、GET请求一般用去请求获取数据，POST一般作为发送数据到后台时使用 2、GET请求也可以传参到后台，但是其参数在浏览器的地址栏的url可见，所以隐私性安全性较差，且参数长度也是有限制的。POST请求传递参数放在request body中，不会在url中显示，比GET要安全，且参数长度无限制",
+        "defaultcha1": "查看更多>>",
+        "defaultcha2": "收起",
+        "chakan": true,
+        "showcha": true,
+        "iswenda": false,
+        "wen": "",
+        "tiwen": "",
+        "huida": "",
+        "youbian": "",
+        "ishas": false,
+        "maintitle": "",
+        "maincontent": [],
+        "dianzan": "iconfont icon-icon_good",
+        "dianzannum": "215",
+        "icondesc": "",
+        "contwen": "",
+        "iconxin": "iconfont icon-bixin",
+        "iconxintitle": "Get"
+      }
+  ],
+  "contents": [
+      {
+        "id": "L001",
+        "touxiaoicon": "imgs/006.jpg",
+        "name": "唐坤河",
+        "zhaopinzhe": "拓保软件.招聘主管",
+        "zhaohu": "[新招呼]",
+        "liaotiancont": "您好，看了你的简历，很想跟你仔细",
+        "contstime": "10:35"
+      },
+      {
+        "id": "L002",
+        "touxiaoicon": "imgs/006.jpg",
+        "name": "李女士",
+        "zhaopinzhe": "联龙博通.招聘者",
+        "zhaohu": "",
+        "liaotiancont": "可以的啊",
+        "contstime": "10:30"
+      },
+      {
+        "id": "L003",
+        "touxiaoicon": "imgs/006.jpg",
+        "name": "周女士",
+        "zhaopinzhe": "天宇智能.HR",
+        "zhaohu": "[新招呼]",
+        "liaotiancont": "您好，方便聊聊吗？",
+        "contstime": "10:30"
+      },
+      {
+        "id": "L004",
+        "touxiaoicon": "imgs/006.jpg",
+        "name": "石女士",
+        "zhaopinzhe": "捷任贤.人事专员",
+        "zhaohu": "[微笑]",
+        "liaotiancont": "好的吧",
+        "contstime": "10:24"
+      },
+      {
+        "id": "L005",
+        "touxiaoicon": "imgs/006.jpg",
+        "name": "梁先生",
+        "zhaopinzhe": "迈思科技.人力资源主管",
+        "zhaohu": "[新招呼]",
+        "liaotiancont": "您好，最近是在找新工作吗",
+        "contstime": "10:23"
+      },
+      {
+        "id": "L006",
+        "touxiaoicon": "imgs/035.jpg",
+        "name": "唐坤河",
+        "zhaopinzhe": "拓保软件.招聘主管",
+        "zhaohu": "[新招呼]",
+        "liaotiancont": "您好，看了你的简历，很想跟你仔细",
+        "contstime": "10:20"
+      },
+      {
+        "id": "L007",
+        "touxiaoicon": "imgs/035.jpg",
+        "name": "李女士",
+        "zhaopinzhe": "联龙博通.招聘者",
+        "zhaohu": "",
+        "liaotiancont": "可以的啊",
+        "contstime": "10:20"
+      },
+      {
+        "id": "L008",
+        "touxiaoicon": "imgs/035.jpg",
+        "name": "周女士",
+        "zhaopinzhe": "天宇智能.HR",
+        "zhaohu": "[新招呼]",
+        "liaotiancont": "您好，方便聊聊吗？",
+        "contstime": "10:20"
+      },
+      {
+        "id": "L009",
+        "touxiaoicon": "imgs/035.jpg",
+        "name": "石女士",
+        "zhaopinzhe": "捷任贤.人事专员",
+        "zhaohu": "[微笑]",
+        "liaotiancont": "好的吧",
+        "contstime": "10:17"
+      },
+      {
+        "id": "L010",
+        "touxiaoicon": "imgs/035.jpg",
+        "name": "梁先生",
+        "zhaopinzhe": "迈思科技.人力资源主管",
+        "zhaohu": "[新招呼]",
+        "liaotiancont": "您好，最近是在找新工作吗",
+        "contstime": "10:05"
+      }
+  ],
+  "xueliyaoqiu": [
+      {
+        "id": "X001",
+        "title": "不限",
+        "checked": true
+      },
+      {
+        "id": "X002",
+        "title": "初中及以下",
+        "checked": false
+      },
+      {
+        "id": "X003",
+        "title": "中专/中技",
+        "checked": false
+      },
+      {
+        "id": "X004",
+        "title": "高中",
+        "checked": false
+      },
+      {
+        "id": "X005",
+        "title": "大专",
+        "checked": false
+      },
+      {
+        "id": "X006",
+        "title": "本科",
+        "checked": false
+      },
+      {
+        "id": "X007",
+        "title": "硕士",
+        "checked": false
+      },
+      {
+        "id": "X008",
+        "title": "博士",
+        "checked": false
+      }
+  ],
+  "xinzidaiyu": [
+  {
+      "id": "X009",
+      "title": "不限"
+  },
+  {
+      "id": "X010",
+      "title": "3K以下"
+  },
+  {
+      "id": "X011",
+      "title": "3-5K"
+  },
+  {
+      "id": "X012",
+      "title": "5-10K"
+  },
+  {
+      "id": "X013",
+      "title": "10-20K"
+  },
+  {
+      "id": "X014",
+      "title": "20-50K"
+  },
+  {
+      "id": "X015",
+      "title": "50K以上"
+  }
+  ],
+  "jingyanyaoqiu": [
+  {
+      "id": "X016",
+      "title": "不限",
+      "checked": true
+  },
+  {
+      "id": "X017",
+      "title": "在校生",
+      "checked": false
+  },
+  {
+      "id": "X018",
+      "title": "应届生",
+      "checked": false
+  },
+  {
+      "id": "X019",
+      "title": "1年以内",
+      "checked": false
+  },
+  {
+      "id": "X020",
+      "title": "1-3年",
+      "checked": false
+  },
+  {
+      "id": "X021",
+      "title": "3-5年",
+      "checked": false
+  },
+  {
+      "id": "X022",
+      "title": "5-10年",
+      "checked": false
+  },
+  {
+      "id": "X023",
+      "title": "10年以上",
+      "checked": false
+  }
+  ],
+  "hangye": [
+  {
+      "id": "X024",
+      "title": "不限",
+      "checked": true
+  },
+  {
+      "id": "X025",
+      "title": "电子商务",
+      "checked": false
+  },
+  {
+      "id": "X026",
+      "title": "游戏",
+      "checked": false
+  },
+  {
+      "id": "X027",
+      "title": "媒体",
+      "checked": false
+  },
+  {
+      "id": "X028",
+      "title": "广告营销",
+      "checked": false
+  },
+  {
+      "id": "X029",
+      "title": "数据服务",
+      "checked": false
+  },
+  {
+      "id": "X030",
+      "title": "医疗健康",
+      "checked": false
+  },
+  {
+      "id": "X031",
+      "title": "生活服务",
+      "checked": false
+  },
+  {
+      "id": "X032",
+      "title": "O2O",
+      "checked": false
+  },
+  {
+      "id": "X033",
+      "title": "旅游",
+      "checked": false
+  },
+  {
+      "id": "X034",
+      "title": "分类信息",
+      "checked": false
+  },
+  {
+      "id": "X035",
+      "title": "音乐/视频/阅读",
+      "checked": false
+  },
+  {
+      "id": "X036",
+      "title": "在线教育",
+      "checked": false
+  },
+  {
+      "id": "X037",
+      "title": "社交网络",
+      "checked": false
+  },
+  {
+      "id": "X038",
+      "title": "人力资源服务",
+      "checked": false
+  },
+  {
+      "id": "X039",
+      "title": "企业服务",
+      "checked": false
+  },
+  {
+      "id": "X040",
+      "title": "信息安全",
+      "checked": false
+  },
+  {
+      "id": "X041",
+      "title": "智能硬件",
+      "checked": false
+  },
+  {
+      "id": "X042",
+      "title": "移动互联网",
+      "checked": false
+  },
+  {
+      "id": "X043",
+      "title": "互联网",
+      "checked": false
+  },
+  {
+      "id": "X044",
+      "title": "计算机软件",
+      "checked": false
+  },
+  {
+      "id": "X045",
+      "title": "通信/网络设备",
+      "checked": false
+  },
+  {
+      "id": "X046",
+      "title": "广告/公关/会展",
+      "checked": false
+  },
+  {
+      "id": "X047",
+      "title": "互联网金融",
+      "checked": false
+  },
+  {
+      "id": "X048",
+      "title": "物流/仓储",
+      "checked": false
+  },
+  {
+      "id": "X049",
+      "title": "贸易/进出口",
+      "checked": false
+  },
+  {
+      "id": "X050",
+      "title": "咨询",
+      "checked": false
+  },
+  {
+      "id": "X051",
+      "title": "工程施工",
+      "checked": false
+  },
+  {
+      "id": "X052",
+      "title": "汽车生产",
+      "checked": false
+  },
+  {
+      "id": "X053",
+      "title": "其他行业",
+      "checked": false
+  }
+  ],
+  "gongsiguimo": [
+  {
+      "id": "X054",
+      "title": "不限",
+      "checked": true
+  },
+  {
+      "id": "X055",
+      "title": "0-20人",
+      "checked": false
+  },
+  {
+      "id": "X056",
+      "title": "20-99人",
+      "checked": false
+  },
+  {
+      "id": "X057",
+      "title": "100-499人",
+      "checked": false
+  },
+  {
+      "id": "X058",
+      "title": "500-999人",
+      "checked": false
+  },
+  {
+      "id": "X059",
+      "title": "1000-9999人",
+      "checked": false
+  },
+  {
+      "id": "X060",
+      "title": "10000人以上",
+      "checked": false
+  }
+  ],
+  "rongzijieduan": [
+  {
+      "id": "X061",
+      "title": "不限",
+      "checked": true
+  },
+  {
+      "id": "X062",
+      "title": "未融资",
+      "checked": false
+  },
+  {
+      "id": "X063",
+      "title": "天使轮",
+      "checked": false
+  },
+  {
+      "id": "X064",
+      "title": "A轮",
+      "checked": false
+  },
+  {
+      "id": "X065",
+      "title": "B轮",
+      "checked": false
+  },
+  {
+      "id": "X066",
+      "title": "C轮",
+      "checked": false
+  },
+  {
+      "id": "X067",
+      "title": "D轮及以上",
+      "checked": false
+  },
+  {
+      "id": "X068",
+      "title": "已上市",
+      "checked": false
+  },
+  {
+      "id": "X069",
+      "title": "不需要融资",
+      "checked": false
+  }
+  ],
+  "remenxiaoke": [
+      {
+        "id": "K0001",
+        "xiaokeimgs": "imgs/zhichang.jpg"
+      },
+      {
+        "id": "K0002",
+        "xiaokeimgs": "imgs/siwei.jpg"
+      },
+      {
+        "id": "K0003",
+        "xiaokeimgs": "imgs/duanshipin.jpg"
+      },
+      {
+        "id": "K0004",
+        "xiaokeimgs": "imgs/wanzhuanppt.jpg"
+      },
+      {
+        "id": "K0005",
+        "xiaokeimgs": "imgs/zhichangxiezuoke.jpg"
+      }
+  ],
+  "remen": [
+  {
+      "title": "热门话题",
+      "list": [
+      {
+          "id": "T0001",
+          "title": "Excel公式大全",
+          "remennum": "117个知识点",
+          "hdclassname": "",
           "huida": "",
-          "youbian": "",
-          "ishas": true,
-          "maintitle": "触摸事件包括以下哪几种？（多选）",
-          "maincontent": ["touchesBegan", "touchesMoved", "touchesCancelled", "touchesEnded"],
-          "dianzan": "iconfont icon-icon_good",
-          "dianzannum": "96",
-          "icondesc": "iconfont icon-jiahao1",
-          "contwen": "知识点",
-          "iconxin": "iconfont icon-bixin",
-          "iconxintitle": "Get"
-        },
-        {
-          "id": "F003",
-          "rticon": "iconfont icon-1",
-          "rttitle": "优质内容",
-          "titleleft": "Java工程师面试考点",
-          "iconmore": "iconfont icon-more",
-          "userimg": "require(@/assets/imgs/006.jpg)",
-          "iconvip": "iconfont icon-vip",
-          "userdis": "黄俊凯",
-          "usertitle": "Java 3年",
-          "faxianmain": "JavaScript的标准是ECMAScript 。截至 2012 年，所有浏览器都完整的支持ECMAScript 5.1，旧版本的浏览器至少支持ECMAScript 3 标准。2015年6月17日，ECMA国际组织发布了ECMAScript的第六版，该版本正式名称为 ECMAScript 2015，但通常被称为ECMAScript 6 或者ES6。",
-          "defaultcha1": "查看更多>>",
-          "defaultcha2": "收起",
-          "chakan": true,
-          "showcha": true,
-          "iswenda": true,
-          "wen": "问",
-          "tiwen": "面试官问'对JavaScript的理解'时，该怎么回答？",
-          "huida": "已有63个回答",
-          "youbian": "iconfont icon-youbian",
-          "ishas": false,
-          "maintitle": "",
-          "maincontent": [],
-          "dianzan": "iconfont icon-icon_good",
-          "dianzannum": "639",
-          "icondesc": "iconfont icon-xiaoxi2",
-          "contwen": "我来回答",
-          "iconxin": "iconfont icon-bixin",
-          "iconxintitle": "Get"
-        }
-    ],
-    "contents": [
-        {
-          "id": "L001",
-          "touxiaoicon": "require(@/assets/imgs/006.jpg)",
-          "name": "唐坤河",
-          "zhaopinzhe": "拓保软件.招聘主管",
-          "zhaohu": "[新招呼]",
-          "liaotiancont": "您好，看了你的简历，很想跟你仔细",
-          "contstime": "10:35"
-        },
-        {
-          "id": "L002",
-          "touxiaoicon": "require(@/assets/imgs/006.jpg)",
-          "name": "李女士",
-          "zhaopinzhe": "联龙博通.招聘者",
-          "zhaohu": "",
-          "liaotiancont": "可以的啊",
-          "contstime": "10:30"
-        },
-        {
-          "id": "L003",
-          "touxiaoicon": "require(@/assets/imgs/006.jpg)",
-          "name": "周女士",
-          "zhaopinzhe": "天宇智能.HR",
-          "zhaohu": "[新招呼]",
-          "liaotiancont": "您好，方便聊聊吗？",
-          "contstime": "10:30"
-        },
-        {
-          "id": "L004",
-          "touxiaoicon": "require(@/assets/imgs/006.jpg)",
-          "name": "石女士",
-          "zhaopinzhe": "捷任贤.人事专员",
-          "zhaohu": "[微笑]",
-          "liaotiancont": "好的吧",
-          "contstime": "10:24"
-        },
-        {
-          "id": "L005",
-          "touxiaoicon": "require(@/assets/imgs/006.jpg)",
-          "name": "梁先生",
-          "zhaopinzhe": "迈思科技.人力资源主管",
-          "zhaohu": "[新招呼]",
-          "liaotiancont": "您好，最近是在找新工作吗",
-          "contstime": "10:23"
-        },
-        {
-          "id": "L006",
-          "touxiaoicon": "require(@/assets/imgs/035.jpg)",
-          "name": "唐坤河",
-          "zhaopinzhe": "拓保软件.招聘主管",
-          "zhaohu": "[新招呼]",
-          "liaotiancont": "您好，看了你的简历，很想跟你仔细",
-          "contstime": "10:20"
-        },
-        {
-          "id": "L007",
-          "touxiaoicon": "require(@/assets/imgs/035.jpg)",
-          "name": "李女士",
-          "zhaopinzhe": "联龙博通.招聘者",
-          "zhaohu": "",
-          "liaotiancont": "可以的啊",
-          "contstime": "10:20"
-        },
-        {
-          "id": "L008",
-          "touxiaoicon": "require(@/assets/imgs/035.jpg)",
-          "name": "周女士",
-          "zhaopinzhe": "天宇智能.HR",
-          "zhaohu": "[新招呼]",
-          "liaotiancont": "您好，方便聊聊吗？",
-          "contstime": "10:20"
-        },
-        {
-          "id": "L009",
-          "touxiaoicon": "require(@/assets/imgs/035.jpg)",
-          "name": "石女士",
-          "zhaopinzhe": "捷任贤.人事专员",
-          "zhaohu": "[微笑]",
-          "liaotiancont": "好的吧",
-          "contstime": "10:17"
-        },
-        {
-          "id": "L010",
-          "touxiaoicon": "require(@/assets/imgs/035.jpg)",
-          "name": "梁先生",
-          "zhaopinzhe": "迈思科技.人力资源主管",
-          "zhaohu": "[新招呼]",
-          "liaotiancont": "您好，最近是在找新工作吗",
-          "contstime": "10:05"
-        }
-    ],
-    "xueliyaoqiu": [
-        {
-          "id": "X001",
-          "title": "不限",
-          "checked": true
-        },
-        {
-          "id": "X002",
-          "title": "初中及以下",
-          "checked": false
-        },
-        {
-          "id": "X003",
-          "title": "中专/中技",
-          "checked": false
-        },
-        {
-          "id": "X004",
-          "title": "高中",
-          "checked": false
-        },
-        {
-          "id": "X005",
-          "title": "大专",
-          "checked": false
-        },
-        {
-          "id": "X006",
-          "title": "本科",
-          "checked": false
-        },
-        {
-          "id": "X007",
-          "title": "硕士",
-          "checked": false
-        },
-        {
-          "id": "X008",
-          "title": "博士",
-          "checked": false
-        }
-    ],
-    "xinzidaiyu": [
+          "gzclassname": "guanzhu",
+          "guanzhu": "10W+关注"
+      },
+      {
+          "id": "T0002",
+          "title": "新媒体运营常见面试题",
+          "remennum": "224个知识点",
+          "hdclassname": "",
+          "huida": "",
+          "gzclassname": "guanzhu",
+          "guanzhu": "10W+关注"
+      },
+      {
+          "id": "T0003",
+          "title": "人力资源常用术语大全",
+          "remennum": "131个知识点",
+          "hdclassname": "",
+          "huida": "",
+          "gzclassname": "",
+          "guanzhu": ""
+      }
+      ]
+  },
+  {
+      "title": "热门问题",
+      "list": [
+      {
+          "id": "T0004",
+          "title": "离职员工再入职，是否还需要试用期",
+          "remennum": "272个回答",
+          "hdclassname": "huida",
+          "huida": "很多Boss回答",
+          "gzclassname": "guanzhu",
+          "guanzhu": "700+关注"
+      },
+      {
+          "id": "T0005",
+          "title": "做分页，做在前端好还是后端好？为什么？",
+          "remennum": "110个回答",
+          "hdclassname": "huida",
+          "huida": "很多移动开发回答",
+          "gzclassname": "guanzhu",
+          "guanzhu": "700+关注"
+      },
+      {
+          "id": "T0006",
+          "title": "HR在执行裁员工作时，是否会担心自己将来和被裁员工有相同遭遇？",
+          "remennum": "255给回答",
+          "hdclassname": "",
+          "huida": "",
+          "gzclassname": "",
+          "guanzhu": ""
+      }
+      ]
+  }
+  ],
+  "qianduangoujia": [
+      {
+        "id": "G001",
+        "title": "Vue",
+        "checked": false
+      },
+      {
+        "id": "G002",
+        "title": "jQuery",
+        "checked": false
+      },
+      {
+        "id": "G003",
+        "title": "BootStrap",
+        "checked": false
+      },
+      {
+        "id": "G004",
+        "title": "React",
+        "checked": false
+      },
+      {
+        "id": "G005",
+        "title": "Node.js",
+        "checked": false
+      },
+      {
+        "id": "G006",
+        "title": "Angular",
+        "checked": false
+      },
+      {
+        "id": "G007",
+        "title": "backbone",
+        "checked": false
+      },
+      {
+        "id": "G008",
+        "title": "ExtJS",
+        "checked": false
+      },
+      {
+        "id": "G009",
+        "title": "Semantic UI",
+        "checked": false
+      },
+      {
+        "id": "G010",
+        "title": "Dojo",
+        "checked": false
+      },
+      {
+        "id": "G011",
+        "title": "Polymer",
+        "checked": false
+      },
+      {
+        "id": "G012",
+        "title": "Dhtmlx",
+        "checked": false
+      },
+      {
+        "id": "G013",
+        "title": "YUI3",
+        "checked": false
+      }
+  ],
+  "kaifayuyan": [
     {
-        "id": "X009",
-        "title": "不限"
+      "id": "G014",
+      "title": "JavaScript",
+      "checked": false
     },
     {
-        "id": "X010",
-        "title": "3K以下"
+      "id": "G015",
+      "title": "PHP",
+      "checked": false
     },
     {
-        "id": "X011",
-        "title": "3-5K"
+      "id": "G016",
+      "title": "Java",
+      "checked": false
     },
     {
-        "id": "X012",
-        "title": "5-10K"
+      "id": "G017",
+      "title": "SQL",
+      "checked": false
     },
     {
-        "id": "X013",
-        "title": "10-20K"
+      "id": "G018",
+      "title": "TypeScript",
+      "checked": false
     },
     {
-        "id": "X014",
-        "title": "20-50K"
+      "id": "G019",
+      "title": "Python",
+      "checked": false
     },
     {
-        "id": "X015",
-        "title": "50K以上"
+      "id": "G020",
+      "title": ".NET",
+      "checked": false
+    },
+    {
+      "id": "G021",
+      "title": "C#",
+      "checked": false
+    },
+    {
+      "id": "G022",
+      "title": "C/C++",
+      "checked": false
+    },
+    {
+      "id": "G023",
+      "title": "D",
+      "checked": false
+    },
+    {
+      "id": "G024",
+      "title": "R",
+      "checked": false
+    },
+    {
+      "id": "G025",
+      "title": "Shell",
+      "checked": false
+    },
+    {
+      "id": "G026",
+      "title": "Swift",
+      "checked": false
+    },
+    {
+      "id": "G027",
+      "title": "Golang",
+      "checked": false
+    },
+    {
+      "id": "G028",
+      "title": "Objective-C",
+      "checked": false
+    },
+    {
+      "id": "G029",
+      "title": "Lua",
+      "checked": false
+    },
+    {
+      "id": "G030",
+      "title": "Visual Basic",
+      "checked": false
+    },
+    {
+      "id": "G031",
+      "title": "Delphi",
+      "checked": false
+    },
+    {
+      "id": "G032",
+      "title": "Kotlin",
+      "checked": false
+    },
+    {
+      "id": "G033",
+      "title": "MATLAB",
+      "checked": false
+    },
+    {
+      "id": "G034",
+      "title": "VBA",
+      "checked": false
+    },
+    {
+      "id": "G035",
+      "title": "Groovy",
+      "checked": false
+    },
+    {
+      "id": "G036",
+      "title": "Haskell",
+      "checked": false
+    },
+    {
+      "id": "G037",
+      "title": "Perl",
+      "checked": false
+    },
+    {
+      "id": "G038",
+      "title": "Scala",
+      "checked": false
+    },
+    {
+      "id": "G039",
+      "title": "Erlang",
+      "checked": false
+    },
+    {
+      "id": "G040",
+      "title": "AssemblyLanguage",
+      "checked": false
+    },
+    {
+      "id": "G041",
+      "title": "Liso",
+      "checked": false
+    },
+    {
+      "id": "G042",
+      "title": "Julia",
+      "checked": false
     }
-    ],
-    "jingyanyaoqiu": [
+  ],
+  "changyongku": [
     {
-        "id": "X016",
-        "title": "不限",
-        "checked": true
+      "id": "G043",
+      "title": "jQuery",
+      "checked": false
     },
     {
-        "id": "X017",
-        "title": "在校生",
-        "checked": false
+      "id": "G044",
+      "title": "Less",
+      "checked": false
     },
     {
-        "id": "X018",
-        "title": "应届生",
-        "checked": false
+      "id": "G045",
+      "title": "Sass",
+      "checked": false
     },
     {
-        "id": "X019",
-        "title": "1年以内",
-        "checked": false
+      "id": "G046",
+      "title": "TypeScript",
+      "checked": false
     },
     {
-        "id": "X020",
-        "title": "1-3年",
-        "checked": false
+      "id": "G047",
+      "title": "Animate.css",
+      "checked": false
     },
     {
-        "id": "X021",
-        "title": "3-5年",
-        "checked": false
+      "id": "G048",
+      "title": "Mock.js",
+      "checked": false
     },
     {
-        "id": "X022",
-        "title": "5-10年",
-        "checked": false
+      "id": "G049",
+      "title": "lodash",
+      "checked": false
     },
     {
-        "id": "X023",
-        "title": "10年以上",
-        "checked": false
+      "id": "G050",
+      "title": "CoffeeScript",
+      "checked": false
+    },
+    {
+      "id": "G051",
+      "title": "Velocity.js",
+      "checked": false
+    },
+    {
+      "id": "G052",
+      "title": "OpenGL",
+      "checked": false
     }
-    ],
-    "hangye": [
+  ],
+  "qianduanxiangmu": [
     {
-        "id": "X024",
-        "title": "不限",
-        "checked": true
+      "id": "G053",
+      "title": "电商",
+      "checked": false
     },
     {
-        "id": "X025",
-        "title": "电子商务",
-        "checked": false
+      "id": "G054",
+      "title": "小程序",
+      "checked": false
     },
     {
-        "id": "X026",
-        "title": "游戏",
-        "checked": false
+      "id": "G055",
+      "title": "可视化",
+      "checked": false
     },
     {
-        "id": "X027",
-        "title": "媒体",
-        "checked": false
+      "id": "G056",
+      "title": "手机游戏",
+      "checked": false
     },
     {
-        "id": "X028",
-        "title": "广告营销",
-        "checked": false
+      "id": "G057",
+      "title": "特效制作",
+      "checked": false
     },
     {
-        "id": "X029",
-        "title": "数据服务",
-        "checked": false
-    },
-    {
-        "id": "X030",
-        "title": "医疗健康",
-        "checked": false
-    },
-    {
-        "id": "X031",
-        "title": "生活服务",
-        "checked": false
-    },
-    {
-        "id": "X032",
-        "title": "O2O",
-        "checked": false
-    },
-    {
-        "id": "X033",
-        "title": "旅游",
-        "checked": false
-    },
-    {
-        "id": "X034",
-        "title": "分类信息",
-        "checked": false
-    },
-    {
-        "id": "X035",
-        "title": "音乐/视频/阅读",
-        "checked": false
-    },
-    {
-        "id": "X036",
-        "title": "在线教育",
-        "checked": false
-    },
-    {
-        "id": "X037",
-        "title": "社交网络",
-        "checked": false
-    },
-    {
-        "id": "X038",
-        "title": "人力资源服务",
-        "checked": false
-    },
-    {
-        "id": "X039",
-        "title": "企业服务",
-        "checked": false
-    },
-    {
-        "id": "X040",
-        "title": "信息安全",
-        "checked": false
-    },
-    {
-        "id": "X041",
-        "title": "智能硬件",
-        "checked": false
-    },
-    {
-        "id": "X042",
-        "title": "移动互联网",
-        "checked": false
-    },
-    {
-        "id": "X043",
-        "title": "互联网",
-        "checked": false
-    },
-    {
-        "id": "X044",
-        "title": "计算机软件",
-        "checked": false
-    },
-    {
-        "id": "X045",
-        "title": "通信/网络设备",
-        "checked": false
-    },
-    {
-        "id": "X046",
-        "title": "广告/公关/会展",
-        "checked": false
-    },
-    {
-        "id": "X047",
-        "title": "互联网金融",
-        "checked": false
-    },
-    {
-        "id": "X048",
-        "title": "物流/仓储",
-        "checked": false
-    },
-    {
-        "id": "X049",
-        "title": "贸易/进出口",
-        "checked": false
-    },
-    {
-        "id": "X050",
-        "title": "咨询",
-        "checked": false
-    },
-    {
-        "id": "X051",
-        "title": "工程施工",
-        "checked": false
-    },
-    {
-        "id": "X052",
-        "title": "汽车生产",
-        "checked": false
-    },
-    {
-        "id": "X053",
-        "title": "其他行业",
-        "checked": false
+      "id": "G058",
+      "title": "网页游戏",
+      "checked": false
     }
-    ],
-    "gongsiguimo": [
+  ],
+  "biaozhunguifan": [
     {
-        "id": "X054",
-        "title": "不限",
-        "checked": true
+      "id": "G059",
+      "title": "CSS3",
+      "checked": false
     },
     {
-        "id": "X055",
-        "title": "0-20人",
-        "checked": false
+      "id": "G060",
+      "title": "HTML5",
+      "checked": false
     },
     {
-        "id": "X056",
-        "title": "20-99人",
-        "checked": false
+      "id": "G061",
+      "title": "JSON",
+      "checked": false
     },
     {
-        "id": "X057",
-        "title": "100-499人",
-        "checked": false
+      "id": "G062",
+      "title": "HTTP1.1",
+      "checked": false
     },
     {
-        "id": "X058",
-        "title": "500-999人",
-        "checked": false
-    },
-    {
-        "id": "X059",
-        "title": "1000-9999人",
-        "checked": false
-    },
-    {
-        "id": "X060",
-        "title": "10000人以上",
-        "checked": false
+      "id": "G063",
+      "title": "XML",
+      "checked": false
     }
-    ],
-    "rongzijieduan": [
+  ],
+  "changyongzujian": [
     {
-        "id": "X061",
-        "title": "不限",
-        "checked": true
+      "id": "G064",
+      "title": "Webpack",
+      "checked": false
     },
     {
-        "id": "X062",
-        "title": "未融资",
-        "checked": false
-    },
-    {
-        "id": "X063",
-        "title": "天使轮",
-        "checked": false
-    },
-    {
-        "id": "X064",
-        "title": "A轮",
-        "checked": false
-    },
-    {
-        "id": "X065",
-        "title": "B轮",
-        "checked": false
-    },
-    {
-        "id": "X066",
-        "title": "C轮",
-        "checked": false
-    },
-    {
-        "id": "X067",
-        "title": "D轮及以上",
-        "checked": false
-    },
-    {
-        "id": "X068",
-        "title": "已上市",
-        "checked": false
-    },
-    {
-        "id": "X069",
-        "title": "不需要融资",
-        "checked": false
+      "id": "G065",
+      "title": "Redux",
+      "checked": false
     }
-    ],
-    "remenxiaoke": [
-        {
-          "id": "K0001",
-          "xiaokeimgs": "require(@/assets/imgs/zhichang.jpg)"
-        },
-        {
-          "id": "K0002",
-          "xiaokeimgs": "require(@/assets/imgs/siwei.jpg)"
-        },
-        {
-          "id": "K0003",
-          "xiaokeimgs": "require(@/assets/imgs/duanshipin.jpg)"
-        },
-        {
-          "id": "K0004",
-          "xiaokeimgs": "require(@/assets/imgs/wanzhuanppt.jpg)"
-        },
-        {
-          "id": "K0005",
-          "xiaokeimgs": "require(@/assets/imgs/zhichangxiezuoke.jpg)"
-        }
-    ],
-    "remen": [
+  ],
+  "changyongyinqing": [
     {
-        "title": "热门话题",
-        "list": [
-        {
-            "id": "T0001",
-            "title": "Excel公式大全",
-            "remennum": "117个知识点",
-            "hdclassname": "",
-            "huida": "",
-            "gzclassname": "guanzhu",
-            "guanzhu": "10W+关注"
-        },
-        {
-            "id": "T0002",
-            "title": "新媒体运营常见面试题",
-            "remennum": "224个知识点",
-            "hdclassname": "",
-            "huida": "",
-            "gzclassname": "guanzhu",
-            "guanzhu": "10W+关注"
-        },
-        {
-            "id": "T0003",
-            "title": "人力资源常用术语大全",
-            "remennum": "131个知识点",
-            "hdclassname": "",
-            "huida": "",
-            "gzclassname": "",
-            "guanzhu": ""
-        }
-        ]
+      "id": "G066",
+      "title": "Egret",
+      "checked": false
     },
     {
-        "title": "热门问题",
-        "list": [
-        {
-            "id": "T0004",
-            "title": "离职员工再入职，是否还需要试用期",
-            "remennum": "272个回答",
-            "hdclassname": "huida",
-            "huida": "很多Boss回答",
-            "gzclassname": "guanzhu",
-            "guanzhu": "700+关注"
-        },
-        {
-            "id": "T0005",
-            "title": "做分页，做在前端好还是后端好？为什么？",
-            "remennum": "110个回答",
-            "hdclassname": "huida",
-            "huida": "很多移动开发回答",
-            "gzclassname": "guanzhu",
-            "guanzhu": "700+关注"
-        },
-        {
-            "id": "T0006",
-            "title": "HR在执行裁员工作时，是否会担心自己将来和被裁员工有相同遭遇？",
-            "remennum": "255给回答",
-            "hdclassname": "",
-            "huida": "",
-            "gzclassname": "",
-            "guanzhu": ""
-        }
-        ]
+      "id": "G067",
+      "title": "Cocos",
+      "checked": false
+    },
+    {
+      "id": "G068",
+      "title": "LayaBox",
+      "checked": false
     }
-    ]
+  ],
+  "guanjianci": [
+    {
+      "id": "G069",
+      "title": "JavaScript",
+      "checked": false
+    },
+    {
+      "id": "G070",
+      "title": "Vuex",
+      "checked": false
+    },
+    {
+      "id": "G071",
+      "title": "页面渲染",
+      "checked": false
+    },
+    {
+      "id": "G072",
+      "title": "axios",
+      "checked": false
+    },
+    {
+      "id": "G073",
+      "title": "单页面应用",
+      "checked": false
+    },
+    {
+      "id": "G074",
+      "title": "矢量图标",
+      "checked": false
+    },
+    {
+      "id": "G075",
+      "title": "VUE框架",
+      "checked": false
+    },
+    {
+      "id": "G076",
+      "title": "数据交互",
+      "checked": false
+    },
+    {
+      "id": "G077",
+      "title": "组件化思想",
+      "checked": false
+    },
+    {
+      "id": "G078",
+      "title": "Vue.js",
+      "checked": false
+    },
+    {
+      "id": "G079",
+      "title": "页面布局",
+      "checked": false
+    },
+    {
+      "id": "G080",
+      "title": "ES6",
+      "checked": false
+    },
+    {
+      "id": "G081",
+      "title": "dom操作",
+      "checked": false
+    },
+    {
+      "id": "G082",
+      "title": "Koa2",
+      "checked": false
+    },
+    {
+      "id": "G083",
+      "title": "页面结构",
+      "checked": false
+    },
+    {
+      "id": "G084",
+      "title": "项目结构",
+      "checked": false
+    },
+    {
+      "id": "G085",
+      "title": "AJAX",
+      "checked": false
+    },
+    {
+      "id": "G086",
+      "title": "CSS样式",
+      "checked": false
+    },
+    {
+      "id": "G087",
+      "title": "熟悉javascript",
+      "checked": false
+    },
+    {
+      "id": "G088",
+      "title": "构建项目",
+      "checked": false
+    },
+    {
+      "id": "G089",
+      "title": "代码优化",
+      "checked": false
+    },
+    {
+      "id": "G090",
+      "title": "MongoDB",
+      "checked": false
+    },
+    {
+      "id": "G091",
+      "title": "微信小程序",
+      "checked": false
+    },
+    {
+      "id": "G092",
+      "title": "设计图",
+      "checked": false
+    },
+    {
+      "id": "G093",
+      "title": "页面展示",
+      "checked": false
+    },
+    {
+      "id": "G094",
+      "title": "网站项目",
+      "checked": false
+    },
+    {
+      "id": "G095",
+      "title": "增删改",
+      "checked": false
+    },
+    {
+      "id": "G096",
+      "title": "注册会员",
+      "checked": false
+    },
+    {
+      "id": "G097",
+      "title": "增删改查",
+      "checked": false
+    },
+    {
+      "id": "G098",
+      "title": "接口数据",
+      "checked": false
+    }
+  ]
 }

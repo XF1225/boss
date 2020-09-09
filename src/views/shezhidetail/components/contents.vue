@@ -74,7 +74,7 @@
           <p>对BOSS隐藏简历</p>
           <el-switch class="switch" v-model="ycjlvalue" active-color="rgb(18,173,165)" inactive-color="#C0CCDA"></el-switch>
         </div>
-        <div class="rcjjr">
+        <div class="rcjjr" @click="rcjjrclick">
           <div>
             <p>对人才经纪人隐藏简历</p>
             <el-switch class="switch" v-model="rcjjrvalue" active-color="rgb(18,173,165)" inactive-color="#C0CCDA"></el-switch>
@@ -123,6 +123,7 @@
 </template>
 
 <script>
+import { Bus } from '@/assets/js/bus'
 export default {
   name: 'contents',
   data () {
@@ -225,6 +226,16 @@ export default {
       default:
         this.show01 = this.show02 = this.show03 = this.show04 = this.show05 = false
         break
+    }
+  },
+  methods: {
+    rcjjrclick () {
+      this.rcjjrvalue = !this.rcjjrvalue
+      if (this.rcjjrvalue === true) {
+        Bus.$emit('changercjjr', true)
+      } else {
+        Bus.$emit('changercjjr', false)
+      }
     }
   }
 }

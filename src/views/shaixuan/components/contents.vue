@@ -48,6 +48,7 @@
           <div class="clear" @click="clearclick">清除</div>
           <div class="conform" @click="conformclick">确定</div>
         </div>
+        <p class="zuiduonum" v-show="chaoguo">最多筛选5个</p>
       </div>
       <div class="kong"></div>
     </div>
@@ -60,356 +61,12 @@ export default {
   name: 'shaixuanconts',
   data () {
     return {
-      xueliyaoqiu: [
-        {
-          id: 'X001',
-          title: '不限',
-          checked: true
-        },
-        {
-          id: 'X002',
-          title: '初中及以下',
-          checked: false
-        },
-        {
-          id: 'X003',
-          title: '中专/中技',
-          checked: false
-        },
-        {
-          id: 'X004',
-          title: '高中',
-          checked: false
-        },
-        {
-          id: 'X005',
-          title: '大专',
-          checked: false
-        },
-        {
-          id: 'X006',
-          title: '本科',
-          checked: false
-        },
-        {
-          id: 'X007',
-          title: '硕士',
-          checked: false
-        },
-        {
-          id: 'X008',
-          title: '博士',
-          checked: false
-        }
-      ],
-      xinzidaiyu: [
-        {
-          id: 'X009',
-          title: '不限'
-        },
-        {
-          id: 'X010',
-          title: '3K以下'
-        },
-        {
-          id: 'X011',
-          title: '3-5K'
-        },
-        {
-          id: 'X012',
-          title: '5-10K'
-        },
-        {
-          id: 'X013',
-          title: '10-20K'
-        },
-        {
-          id: 'X014',
-          title: '20-50K'
-        },
-        {
-          id: 'X015',
-          title: '50K以上'
-        }
-      ],
-      jingyanyaoqiu: [
-        {
-          id: 'X016',
-          title: '不限',
-          checked: true
-        },
-        {
-          id: 'X017',
-          title: '在校生',
-          checked: false
-        },
-        {
-          id: 'X018',
-          title: '应届生',
-          checked: false
-        },
-        {
-          id: 'X019',
-          title: '1年以内',
-          checked: false
-        },
-        {
-          id: 'X020',
-          title: '1-3年',
-          checked: false
-        },
-        {
-          id: 'X021',
-          title: '3-5年',
-          checked: false
-        },
-        {
-          id: 'X022',
-          title: '5-10年',
-          checked: false
-        },
-        {
-          id: 'X023',
-          title: '10年以上',
-          checked: false
-        }
-      ],
-      hangye: [
-        {
-          id: 'X024',
-          title: '不限',
-          checked: true
-        },
-        {
-          id: 'X025',
-          title: '电子商务',
-          checked: false
-        },
-        {
-          id: 'X026',
-          title: '游戏',
-          checked: false
-        },
-        {
-          id: 'X027',
-          title: '媒体',
-          checked: false
-        },
-        {
-          id: 'X028',
-          title: '广告营销',
-          checked: false
-        },
-        {
-          id: 'X029',
-          title: '数据服务',
-          checked: false
-        },
-        {
-          id: 'X030',
-          title: '医疗健康',
-          checked: false
-        },
-        {
-          id: 'X031',
-          title: '生活服务',
-          checked: false
-        },
-        {
-          id: 'X032',
-          title: 'O2O',
-          checked: false
-        },
-        {
-          id: 'X033',
-          title: '旅游',
-          checked: false
-        },
-        {
-          id: 'X034',
-          title: '分类信息',
-          checked: false
-        },
-        {
-          id: 'X035',
-          title: '音乐/视频/阅读',
-          checked: false
-        },
-        {
-          id: 'X036',
-          title: '在线教育',
-          checked: false
-        },
-        {
-          id: 'X037',
-          title: '社交网络',
-          checked: false
-        },
-        {
-          id: 'X038',
-          title: '人力资源服务',
-          checked: false
-        },
-        {
-          id: 'X039',
-          title: '企业服务',
-          checked: false
-        },
-        {
-          id: 'X040',
-          title: '信息安全',
-          checked: false
-        },
-        {
-          id: 'X041',
-          title: '智能硬件',
-          checked: false
-        },
-        {
-          id: 'X042',
-          title: '移动互联网',
-          checked: false
-        },
-        {
-          id: 'X043',
-          title: '互联网',
-          checked: false
-        },
-        {
-          id: 'X044',
-          title: '计算机软件',
-          checked: false
-        },
-        {
-          id: 'X045',
-          title: '通信/网络设备',
-          checked: false
-        },
-        {
-          id: 'X046',
-          title: '广告/公关/会展',
-          checked: false
-        },
-        {
-          id: 'X047',
-          title: '互联网金融',
-          checked: false
-        },
-        {
-          id: 'X048',
-          title: '物流/仓储',
-          checked: false
-        },
-        {
-          id: 'X049',
-          title: '贸易/进出口',
-          checked: false
-        },
-        {
-          id: 'X050',
-          title: '咨询',
-          checked: false
-        },
-        {
-          id: 'X051',
-          title: '工程施工',
-          checked: false
-        },
-        {
-          id: 'X052',
-          title: '汽车生产',
-          checked: false
-        },
-        {
-          id: 'X053',
-          title: '其他行业',
-          checked: false
-        }
-      ],
-      gongsiguimo: [
-        {
-          id: 'X054',
-          title: '不限',
-          checked: true
-        },
-        {
-          id: 'X055',
-          title: '0-20人',
-          checked: false
-        },
-        {
-          id: 'X056',
-          title: '20-99人',
-          checked: false
-        },
-        {
-          id: 'X057',
-          title: '100-499人',
-          checked: false
-        },
-        {
-          id: 'X058',
-          title: '500-999人',
-          checked: false
-        },
-        {
-          id: 'X059',
-          title: '1000-9999人',
-          checked: false
-        },
-        {
-          id: 'X060',
-          title: '10000人以上',
-          checked: false
-        }
-      ],
-      rongzijieduan: [
-        {
-          id: 'X061',
-          title: '不限',
-          checked: true
-        },
-        {
-          id: 'X062',
-          title: '未融资',
-          checked: false
-        },
-        {
-          id: 'X063',
-          title: '天使轮',
-          checked: false
-        },
-        {
-          id: 'X064',
-          title: 'A轮',
-          checked: false
-        },
-        {
-          id: 'X065',
-          title: 'B轮',
-          checked: false
-        },
-        {
-          id: 'X066',
-          title: 'C轮',
-          checked: false
-        },
-        {
-          id: 'X067',
-          title: 'D轮及以上',
-          checked: false
-        },
-        {
-          id: 'X068',
-          title: '已上市',
-          checked: false
-        },
-        {
-          id: 'X069',
-          title: '不需要融资',
-          checked: false
-        }
-      ],
+      xueliyaoqiu: [],
+      xinzidaiyu: [],
+      jingyanyaoqiu: [],
+      hangye: [],
+      gongsiguimo: [],
+      rongzijieduan: [],
       xlcheckbox: [],
       jycheckbox: [],
       hycheckbox: [],
@@ -419,151 +76,213 @@ export default {
       xinzinum: 0,
       checknum: 0,
       showarrow: true,
-      isarrow: true
+      isarrow: true,
+      chaoguo: false
     }
   },
+  mounted () {
+    this.getdata()
+  },
   methods: {
+    getdata () {
+      this.$getdata('/api/mock.json').then(res => {
+        this.xueliyaoqiu = res.xueliyaoqiu
+        this.xinzidaiyu = res.xinzidaiyu
+        this.jingyanyaoqiu = res.jingyanyaoqiu
+        this.hangye = res.hangye
+        this.gongsiguimo = res.gongsiguimo
+        this.rongzijieduan = res.rongzijieduan
+      })
+    },
     xueliclick (i) {
       if (i !== 0) {
         this.xueliyaoqiu[0].checked = false
-        this.xueliyaoqiu[i].checked = true
-        this.xlcheckbox.push(this.xueliyaoqiu[i].id)
-        this.xlcheckbox = [...new Set(this.xlcheckbox)]
+        this.xueliyaoqiu[i].checked = !this.xueliyaoqiu[i].checked
+        if (this.xueliyaoqiu[i].checked === true) {
+          if (this.checknum <= 4) {
+            this.xlcheckbox.push(this.xueliyaoqiu[i].id)
+            this.xlcheckbox = [...new Set(this.xlcheckbox)]
+          } else {
+            this.chaoguo = true
+            setTimeout(() => { this.chaoguo = false }, 3000)
+            this.xueliyaoqiu[i].checked = false
+          }
+        } else {
+          for (var j = 0; j < this.xlcheckbox.length; j++) {
+            if (this.xueliyaoqiu[i].id === this.xlcheckbox[j]) {
+              this.xlcheckbox.splice(j, 1)
+              this.xlcheckbox = [...new Set(this.xlcheckbox)]
+            }
+          }
+        }
       } else {
+        this.$getdata('/api/mock.json').then(res => {
+          this.xueliyaoqiu = res.xueliyaoqiu
+        })
         this.xlcheckbox.length = 0
-        this.xueliyaoqiu[0].checked = true
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 1], 'checked', false)
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 2], 'checked', false)
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 3], 'checked', false)
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 4], 'checked', false)
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 5], 'checked', false)
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 6], 'checked', false)
-        this.$set(this.xueliyaoqiu[this.xueliyaoqiu.length - 7], 'checked', false)
+        this.$emit('change', this.checknum)
       }
+      this.xlcheckbox.length === 0 ? this.xueliyaoqiu[0].checked = true : this.xueliyaoqiu[0].checked = false
       this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
       this.$emit('change', this.checknum)
     },
     xinziclick (index) {
-      this.n = index
-      if (this.xinzidaiyu[index].id !== 'X009') {
-        this.xinzinum = 1
-      } else if (index === 0) {
-        this.xinzinum = 0
+      if (this.checknum <= 4) {
+        this.n = index
+        index === 0 ? this.xinzinum = 0 : this.xinzinum = 1
+        this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
+        this.$emit('change', this.checknum)
+      } else if (this.checknum > 4 && this.xinzinum !== 0) {
+        this.n = index
+        if (index === 0) {
+          this.xinzinum = 0
+          this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
+          this.$emit('change', this.checknum)
+        }
+      } else {
+        this.chaoguo = true
+        setTimeout(() => { this.chaoguo = false }, 3000)
       }
-      this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
-      this.$emit('change', this.checknum)
     },
     jingyanclick (i) {
       if (i !== 0) {
         this.jingyanyaoqiu[0].checked = false
-        this.jingyanyaoqiu[i].checked = true
-        this.jycheckbox.push(this.jingyanyaoqiu[i].id)
-        this.jycheckbox = [...new Set(this.jycheckbox)]
+        this.jingyanyaoqiu[i].checked = !this.jingyanyaoqiu[i].checked
+        if (this.jingyanyaoqiu[i].checked === true) {
+          if (this.checknum <= 4) {
+            this.jycheckbox.push(this.jingyanyaoqiu[i].id)
+            this.jycheckbox = [...new Set(this.jycheckbox)]
+          } else {
+            this.chaoguo = true
+            setTimeout(() => { this.chaoguo = false }, 3000)
+            this.jingyanyaoqiu[i].checked = false
+          }
+        } else {
+          for (var j = 0; j < this.jycheckbox.length; j++) {
+            if (this.jingyanyaoqiu[i].id === this.jycheckbox[j]) {
+              this.jycheckbox.splice(j, 1)
+              this.jycheckbox = [...new Set(this.jycheckbox)]
+            }
+          }
+        }
       } else {
+        this.$getdata('/api/mock.json').then(res => {
+          this.jingyanyaoqiu = res.jingyanyaoqiu
+        })
         this.jycheckbox.length = 0
-        this.jingyanyaoqiu[0].checked = true
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 1], 'checked', false)
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 2], 'checked', false)
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 3], 'checked', false)
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 4], 'checked', false)
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 5], 'checked', false)
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 6], 'checked', false)
-        this.$set(this.jingyanyaoqiu[this.jingyanyaoqiu.length - 7], 'checked', false)
+        this.$emit('change', this.checknum)
       }
+      this.jycheckbox.length === 0 ? this.jingyanyaoqiu[0].checked = true : this.jingyanyaoqiu[0].checked = false
       this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
       this.$emit('change', this.checknum)
     },
     hangyeclick (i) {
       if (i !== 0) {
         this.hangye[0].checked = false
-        this.hangye[i].checked = true
-        this.hycheckbox.push(this.hangye[i].id)
-        this.hycheckbox = [...new Set(this.hycheckbox)]
+        this.hangye[i].checked = !this.hangye[i].checked
+        if (this.hangye[i].checked === true) {
+          if (this.checknum <= 4) {
+            this.hycheckbox.push(this.hangye[i].id)
+            this.hycheckbox = [...new Set(this.hycheckbox)]
+          } else {
+            this.chaoguo = true
+            setTimeout(() => { this.chaoguo = false }, 3000)
+            this.hangye[i].checked = false
+          }
+        } else {
+          for (var j = 0; j < this.hycheckbox.length; j++) {
+            if (this.hangye[i].id === this.hycheckbox[j]) {
+              this.hycheckbox.splice(j, 1)
+              this.hycheckbox = [...new Set(this.hycheckbox)]
+            }
+          }
+        }
       } else {
+        this.$getdata('/api/mock.json').then(res => {
+          this.hangye = res.hangye
+        })
         this.hycheckbox.length = 0
-        this.hangye[0].checked = true
-        this.$set(this.hangye[this.hangye.length - 1], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 2], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 3], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 4], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 5], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 6], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 7], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 8], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 9], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 10], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 11], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 12], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 13], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 14], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 15], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 16], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 17], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 18], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 19], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 20], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 21], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 22], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 23], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 24], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 25], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 26], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 27], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 28], 'checked', false)
-        this.$set(this.hangye[this.hangye.length - 29], 'checked', false)
+        this.$emit('change', this.checknum)
       }
+      this.hycheckbox.length === 0 ? this.hangye[0].checked = true : this.hangye[0].checked = false
       this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
       this.$emit('change', this.checknum)
-    },
-    arrowclick () {
-      this.showarrow = !this.showarrow
-      this.isarrow = !this.isarrow
     },
     guimoclick (i) {
       if (i !== 0) {
         this.gongsiguimo[0].checked = false
-        this.gongsiguimo[i].checked = true
-        this.gmcheckbox.push(this.gongsiguimo[i].id)
-        this.gmcheckbox = [...new Set(this.gmcheckbox)]
+        this.gongsiguimo[i].checked = !this.gongsiguimo[i].checked
+        if (this.gongsiguimo[i].checked === true) {
+          if (this.checknum <= 4) {
+            this.gmcheckbox.push(this.gongsiguimo[i].id)
+            this.gmcheckbox = [...new Set(this.gmcheckbox)]
+          } else {
+            this.chaoguo = true
+            setTimeout(() => { this.chaoguo = false }, 3000)
+            this.gongsiguimo[i].checked = false
+          }
+        } else {
+          for (var j = 0; j < this.gmcheckbox.length; j++) {
+            if (this.gongsiguimo[i].id === this.gmcheckbox[j]) {
+              this.gmcheckbox.splice(j, 1)
+              this.gmcheckbox = [...new Set(this.gmcheckbox)]
+            }
+          }
+        }
       } else {
+        this.$getdata('/api/mock.json').then(res => {
+          this.gongsiguimo = res.gongsiguimo
+        })
         this.gmcheckbox.length = 0
-        this.gongsiguimo[0].checked = true
-        this.$set(this.gongsiguimo[this.gongsiguimo.length - 1], 'checked', false)
-        this.$set(this.gongsiguimo[this.gongsiguimo.length - 2], 'checked', false)
-        this.$set(this.gongsiguimo[this.gongsiguimo.length - 3], 'checked', false)
-        this.$set(this.gongsiguimo[this.gongsiguimo.length - 4], 'checked', false)
-        this.$set(this.gongsiguimo[this.gongsiguimo.length - 5], 'checked', false)
-        this.$set(this.gongsiguimo[this.gongsiguimo.length - 6], 'checked', false)
+        this.$emit('change', this.checknum)
       }
+      this.gmcheckbox.length === 0 ? this.gongsiguimo[0].checked = true : this.gongsiguimo[0].checked = false
       this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
       this.$emit('change', this.checknum)
     },
     rongziclick (i) {
       if (i !== 0) {
         this.rongzijieduan[0].checked = false
-        this.rongzijieduan[i].checked = true
-        this.rzcheckbox.push(this.rongzijieduan[i].id)
-        this.rzcheckbox = [...new Set(this.rzcheckbox)]
+        this.rongzijieduan[i].checked = !this.rongzijieduan[i].checked
+        if (this.rongzijieduan[i].checked === true) {
+          if (this.checknum <= 4) {
+            this.rzcheckbox.push(this.rongzijieduan[i].id)
+            this.rzcheckbox = [...new Set(this.rzcheckbox)]
+          } else {
+            this.chaoguo = true
+            setTimeout(() => { this.chaoguo = false }, 3000)
+            this.rongzijieduan[i].checked = false
+          }
+        } else {
+          this.rongzijieduan[i].checked = false
+          for (var j = 0; j < this.rzcheckbox.length; j++) {
+            if (this.rongzijieduan[i].id === this.rzcheckbox[j]) {
+              this.rzcheckbox.splice(j, 1)
+              this.rzcheckbox = [...new Set(this.rzcheckbox)]
+            }
+          }
+        }
       } else {
+        this.$getdata('/api/mock.json').then(res => {
+          this.rongzijieduan = res.rongzijieduan
+        })
         this.rzcheckbox.length = 0
-        this.rongzijieduan[0].checked = true
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 1], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 2], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 3], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 4], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 5], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 6], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 7], 'checked', false)
-        this.$set(this.rongzijieduan[this.rongzijieduan.length - 8], 'checked', false)
+        this.$emit('change', this.checknum)
       }
+      this.rzcheckbox.length === 0 ? this.rongzijieduan[0].checked = true : this.rongzijieduan[0].checked = false
       this.checknum = this.xlcheckbox.length + this.xinzinum + this.jycheckbox.length + this.hycheckbox.length + this.gmcheckbox.length + this.rzcheckbox.length
       this.$emit('change', this.checknum)
     },
     clearclick () {
       // 重置当前页面数据
-      Object.assign(this.$data, this.$options.data.call(this))
-      this.checknum = 0
+      // Object.assign(this.$data, this.$options.data.call(this))
+      this.getdata()
+      this.n = this.checknum = this.xlcheckbox.length = this.xinzinum = this.jycheckbox.length = this.hycheckbox.length = this.gmcheckbox.length = this.rzcheckbox.length = 0
       this.$emit('change', this.checknum)
+    },
+    arrowclick () {
+      this.showarrow = !this.showarrow
+      this.isarrow = !this.isarrow
     },
     conformclick () {
       this.$router.go(-1)
@@ -662,6 +381,18 @@ export default {
         margin-right .1rem
         background $bgColor
         color white
+    .zuiduonum
+      width 35%
+      height 1rem
+      line-height 1rem
+      font-size .35rem
+      text-align center
+      position absolute
+      top -45%
+      left 30%
+      color white
+      background rgba(0,0,0,.6)
+      border-radius .2rem
   .kong
     width 100%
     height 1.5rem

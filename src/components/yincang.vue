@@ -1,20 +1,34 @@
 <template>
   <div v-show="showyincang">
     <div class="yincang">
-      <div><i>x</i><p>您已对人才经纪人隐藏简历</p></div>
-      <span>取消隐藏</span>
+      <div><i @click="yincangclick">x</i><p>您已对人才经纪人隐藏简历</p></div>
+      <span @click="toshezhiclick">取消隐藏</span>
     </div>
     <div class="kong"></div>
   </div>
 </template>
 
 <script>
+import { Bus } from '@/assets/js/bus'
 export default {
   name: 'yincang',
   data () {
     return {
       showyincang: true
     }
+  },
+  methods: {
+    yincangclick () {
+      this.showyincang = false
+    },
+    toshezhiclick () {
+      this.$router.push('/shezhidetail/S003')
+    }
+  },
+  mounted () {
+    Bus.$on('changercjjr', () => {
+      this.showyincang = !this.showyincang
+    })
   }
 }
 </script>

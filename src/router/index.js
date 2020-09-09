@@ -81,6 +81,26 @@ const routes = [
     path: '/shaixuan',
     name: 'shaixuan',
     component: () => import('../views/shaixuan/shaixuan')
+  },
+  {
+    path: '/guanjianci',
+    name: 'guanjianci',
+    component: () => import('../views/guanjianci/guanjianci')
+  },
+  {
+    path: '/faxianjia',
+    name: 'faxianjia',
+    component: () => import('../views/faxianjia/faxianjia')
+  },
+  {
+    path: '/citychoice',
+    name: 'citychoice',
+    component: () => import('../views/citychoice/citychoice')
+  },
+  {
+    path: '/liaotiandetail/:id',
+    name: 'liaotiandetail',
+    component: () => import('../views/liaotiandetail/liaotiandetail')
   }
 ]
 const router = new VueRouter({

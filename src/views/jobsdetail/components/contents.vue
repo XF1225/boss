@@ -1,31 +1,31 @@
 <template>
   <div class="jobscontents">
-    <div class="jobsdetail">
+    <div class="jobsdetail" v-for="item of HomeContent" :key="item.id">
       <div class="jobs-title">
         <div class="titleprice">
-          <h2>web前端开发工程师</h2>
-          <h4>10-15.14薪</h4>
+          <h2>{{item.conttitle}}</h2>
+          <h4>{{item.contprice}}</h4>
         </div>
         <div class="titlebottom">
           <div>
             <span class="iconfont icon-weizhi"></span>
-            <p>北京</p>
+            <p>{{item.area.split(' ')[0]}}</p>
           </div>
-          <div v-for="(item,index) of titlebottom" :key="index">
-            <span :class="item.icon"></span>
-            <p>{{item.title}}</p>
+          <div v-for="(items,index) of item.titlebottom" :key="index">
+            <span :class="items.icon"></span>
+            <p>{{items.title}}</p>
           </div>
         </div>
       </div>
       <div class="bossdesc">
         <div class="desc-let">
-          <div class="bossimg"><img src="@/assets/imgs/006.jpg"></div>
+          <div class="bossimg"><img src="/imgs/006.jpg"></div>
           <div class="details">
             <div class="details-top">
-              <h4>何颖</h4>
+              <h4>{{item.contp.split('.')[0]}}</h4>
               <span>今日活跃</span>
             </div>
-            <p class="details-bot">易发.人事经理</p>
+            <p class="details-bot">{{item.contconp.split(' ')[0]}}.{{item.contp.split('.')[1]}}</p>
           </div>
         </div>
         <span class="iconfont icon-youbian"></span>
@@ -37,7 +37,7 @@
       <div class="zhiweixiangqing">
         <h4 class="xiangqing">职位详情</h4>
         <div class="jinengfl">
-          <li v-for="(item,index) of jinengfl" :key="index">{{item}}</li>
+          <li v-for="(items,index) of item.contkeys" :key="index">{{items}}</li>
         </div>
         <div class="zhiweidetail">
           {{zhiweidetail|ellipsis}}
@@ -46,10 +46,10 @@
       <div class="companydetail">
         <div class="com-detail">
           <div>
-            <div class="com-img"><img src="@/assets/imgs/006.jpg"></div>
+            <div class="com-img"><img src="/imgs/006.jpg"></div>
             <div class="com-desc">
-              <p>易发（北京）互联网贸易有限公司</p>
-              <span>未融资.20-99人.电子商务</span>
+              <p>{{item.contconp.split(' ')[0]}}</p>
+              <span>{{item.contconp.split(' ')[1]}}.{{item.conpnum}}.电子商务</span>
             </div>
           </div>
           <span class="iconfont icon-youbian"></span>
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="bottom-button">
-        <input type="button" class="bottom-btn" value="立即沟通">
+        <input type="button" class="bottom-btn" value="立即沟通" @click="toliaotian(item.id)">
       </div>
     </div>
   </div>
@@ -101,16 +101,7 @@ export default {
   components: { Map },
   data () {
     return {
-      titlebottom: [
-        {
-          icon: 'iconfont icon-zhaopin_zhichang',
-          title: '3-5年'
-        },
-        {
-          icon: 'iconfont icon-tianchongxing-',
-          title: '大专'
-        }
-      ],
+      HomeContent: [],
       jinengfl: ['GIT', 'CSS', 'Vue.js', 'echarts', 'Webpack', 'H5', 'ES6'],
       zhiweidetail: '工作职责:1、根据业务需求，完成页面编写，及前后端联调；2、根据业务需求，完成页面编写，及前后端联调；3、根据业务需求，完成页面编写，及前后端联调；任职资格:1、计算机相关专业及大专以上学历，互联网开发3年以上相关工作经验，至少参与过2个以上的移动端项目开发。2、计算机相关专业及大专以上学历，互联网开发3年以上相关工作经验，至少参与过2个以上的移动端项目开发。'
     }
@@ -123,6 +114,19 @@ export default {
         return value.slice(0, 100) + '<a href="#">这是一个连接</a>'
       }
       return value
+    }
+  },
+  activated () {
+    this.getdata()
+  },
+  methods: {
+    getdata () {
+      this.$getdata('/api/mock.json').then(res => {
+        this.HomeContent = res.HomeContent.filter(item => item.id === this.$route.params.id)
+      })
+    },
+    toliaotian (id) {
+      this.$router.push(`/liaotiandetail/${id}`)
     }
   }
 }

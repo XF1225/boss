@@ -1,12 +1,12 @@
 <template>
   <div class="sousuocontents">
     <div class="zuijinsuosuo">
-      <div class="zuijin-top">
+      <div class="zuijin-top" v-show="this.list.length">
         <h4>最近搜索</h4>
-        <span class="el-icon-delete"></span>
+        <span class="el-icon-delete" @click="deletelist"></span>
       </div>
       <div class="zuijin-bottom">
-        <li>前端</li>
+        <li class="zuijin-li" v-for="(item,index) of list" :key="index">{{item}}</li>
       </div>
     </div>
     <div class="remenxiaoke">
@@ -40,95 +40,35 @@ export default {
   name: 'sousuocontents',
   data () {
     return {
-      remenxiaoke: [
-        {
-          id: 'K0001',
-          xiaokeimgs: require('@/assets/imgs/zhichang.jpg')
-        },
-        {
-          id: 'K0002',
-          xiaokeimgs: require('@/assets/imgs/siwei.jpg')
-        },
-        {
-          id: 'K0003',
-          xiaokeimgs: require('@/assets/imgs/duanshipin.jpg')
-        },
-        {
-          id: 'K0004',
-          xiaokeimgs: require('@/assets/imgs/wanzhuanppt.jpg')
-        },
-        {
-          id: 'K0005',
-          xiaokeimgs: require('@/assets/imgs/zhichangxiezuoke.jpg')
-        }
-      ],
-      remen: [
-        {
-          title: '热门话题',
-          list: [
-            {
-              id: 'T0001',
-              title: 'Excel公式大全',
-              remennum: '117个知识点',
-              hdclassname: '',
-              huida: '',
-              gzclassname: 'guanzhu',
-              guanzhu: '10W+关注'
-            },
-            {
-              id: 'T0002',
-              title: '新媒体运营常见面试题',
-              remennum: '224个知识点',
-              hdclassname: '',
-              huida: '',
-              gzclassname: 'guanzhu',
-              guanzhu: '10W+关注'
-            },
-            {
-              id: 'T0003',
-              title: '人力资源常用术语大全',
-              remennum: '131个知识点',
-              hdclassname: '',
-              huida: '',
-              gzclassname: '',
-              guanzhu: ''
-            }
-          ]
-        },
-        {
-          title: '热门问题',
-          list: [
-            {
-              id: 'T0004',
-              title: '离职员工再入职，是否还需要试用期',
-              remennum: '272个回答',
-              hdclassname: 'huida',
-              huida: '很多Boss回答',
-              gzclassname: 'guanzhu',
-              guanzhu: '700+关注'
-            },
-            {
-              id: 'T0005',
-              title: '做分页，做在前端好还是后端好？为什么？',
-              remennum: '110个回答',
-              hdclassname: 'huida',
-              huida: '很多移动开发回答',
-              gzclassname: 'guanzhu',
-              guanzhu: '700+关注'
-            },
-            {
-              id: 'T0006',
-              title: 'HR在执行裁员工作时，是否会担心自己将来和被裁员工有相同遭遇？',
-              remennum: '255给回答',
-              hdclassname: '',
-              huida: '',
-              gzclassname: '',
-              guanzhu: ''
-            }
-          ]
-        }
-      ]
+      list: [],
+      remenxiaoke: [],
+      remen: []
     }
+  },
+  activated () {
+    if (localStorage.getItem('list') === null) {
+      return false
+    } else {
+      this.list = localStorage.getItem('list').replace(/[`~!@#$%^&*()_"{}\\/;'\\[\]·~！@#￥%……&*（）——\-+={}|《》？：“”【】、；‘'，。、]/g, '')
+      this.list = this.list.split(',').filter(item => {
+        return item && item.trim()
+      })
+    }
+  },
+  methods: {
+    getdata () {
+      this.$getdata('/api/mock.json').then(res => {
+        this.remenxiaoke = res.remenxiaoke
+        this.remen = res.remen
+      })
+    },
+    deletelist () {
+      this.list = []
+      localStorage.setItem('list', JSON.stringify(this.list))
+    }
+  },
+  mounted () {
+    this.getdata()
   }
 }
 </script>
@@ -160,13 +100,13 @@ export default {
       display flex
       flex-direction row
       align-items center
-    .zuijin-bottom li
-      font-size .35rem
-      display inline-block
-      padding .2rem .35rem
-      margin-right .2rem
-      border-radius .1rem
-      background rgb(245,245,245)
+      .zuijin-li
+        font-size .35rem
+        display inline-block
+        padding .2rem .35rem
+        margin-right .2rem
+        border-radius .1rem
+        background rgb(245,245,245)
   .remenxiaoke
     width 100%
     display flex

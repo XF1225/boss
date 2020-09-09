@@ -1,26 +1,30 @@
 <template>
-  <div class="search-header">
-    <div class="details">
-      <div class="search-left">
-        <router-link tag="div" to="/citys">
-          <p>{{this.city}}</p>
-          <span class="el-icon-caret-bottom"></span>
-        </router-link>
-        <input type="text" class="qingshuru" placeholder="请输入职位或公司" v-model="showclose" v-focus>
-        <i class="el-icon-close" v-show="close" @click="cleaript"></i>
+  <div>
+    <div class="search-header">
+      <div class="details">
+        <div class="search-left">
+          <router-link tag="div" to="/citys">
+            <p>{{this.city}}</p>
+            <span class="el-icon-caret-bottom"></span>
+          </router-link>
+          <input type="text" class="qingshuru" placeholder="请输入职位或公司" v-model="inputval" v-focus @keyup.enter="tosearchclick" @keyup.delete="deleteclick">
+          <i class="el-icon-close" v-show="close" @click="cleaript"></i>
+        </div>
+        <p class="quxiao" @click="toup">取消</p>
       </div>
-      <p class="quxiao" @click="toup">取消</p>
     </div>
+    <div class="kong"></div>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import { Bus } from '@/assets/js/bus'
 export default {
   name: 'searchheader',
   data () {
     return {
-      showclose: ''
+      inputval: ''
     }
   },
   methods: {
@@ -28,12 +32,34 @@ export default {
       this.$router.go(-1)
     },
     cleaript () {
-      this.showclose = ''
+      this.inputval = ''
+      Bus.$emit('clear', false)
+    },
+    tosearchclick () {
+      if (this.inputval.trim() === '') {
+        return false
+      }
+      Bus.$emit('changeshow', false)
+      Bus.$emit('scrollimg', false)
+      setTimeout(() => {
+        // this.$router.push('/')
+        Bus.$emit('values', this.inputval)
+      }, 500)
+    },
+    deleteclick () {
+      if (this.inputval.trim() === '') {
+        Bus.$emit('clear', false)
+      }
     }
+  },
+  mounted () {
+    Bus.$on('changeinpt', (title) => {
+      this.inputval = title
+    })
   },
   computed: {
     close () {
-      if (this.showclose === '') {
+      if (this.inputval === '') {
         return false
       } else {
         return true
@@ -48,6 +74,11 @@ export default {
 .search-header
   width 100%
   height 1.5rem
+  background white
+  position fixed
+  top 0
+  left 0
+  z-index 3
   .details
     width 90%
     height 1.5rem
@@ -88,4 +119,7 @@ export default {
     .qingshuru::placeholder
       font-size .35rem
       color rgb(189,189,189)
+.kong
+  width 100%
+  height 1.5rem
 </style>

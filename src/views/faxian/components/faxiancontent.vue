@@ -62,104 +62,22 @@ export default {
   name: 'faxiancontent',
   data () {
     return {
-      faxiancontent: [
-        {
-          id: 'F001',
-          rticon: 'iconfont icon-1',
-          rttitle: '优质内容',
-          titleleft: 'Java工程师面试考点',
-          iconmore: 'iconfont icon-more',
-          userimg: require('@/assets/imgs/006.jpg'),
-          iconvip: 'iconfont icon-vip',
-          userdis: '黄俊凯',
-          usertitle: 'Java 3年',
-          faxianmain: 'JavaScript的标准是ECMAScript 。截至 2012 年，所有浏览器都完整的支持ECMAScript 5.1，旧版本的浏览器至少支持ECMAScript 3 标准。2015年6月17日，ECMA国际组织发布了ECMAScript的第六版，该版本正式名称为 ECMAScript 2015，但通常被称为ECMAScript 6 或者ES6。',
-          defaultcha1: '查看更多>>',
-          defaultcha2: '收起',
-          chakan: true,
-          showcha: true,
-          iswenda: true,
-          wen: '问',
-          tiwen: '面试官问"对JavaScript的理解"时，该怎么回答？',
-          huida: '已有63个回答',
-          youbian: 'iconfont icon-youbian',
-          ishas: false,
-          maintitle: '',
-          maincontent: [],
-          dianzan: 'iconfont icon-icon_good',
-          dianzannum: '639',
-          icondesc: 'iconfont icon-xiaoxi2',
-          contwen: '我来回答',
-          iconxin: 'iconfont icon-bixin',
-          iconxintitle: 'Get'
-        },
-        {
-          id: 'F002',
-          rticon: '',
-          rttitle: '',
-          titleleft: 'ios常见面试题',
-          iconmore: 'iconfont icon-more',
-          userimg: require('@/assets/imgs/006.jpg'),
-          iconvip: 'iconfont icon-vip',
-          userdis: '职测',
-          usertitle: 'BOSS直聘.官方',
-          faxianmain: '',
-          defaultcha1: '',
-          chakan: true,
-          showcha: true,
-          iswenda: false,
-          wen: '',
-          tiwen: '',
-          huida: '',
-          youbian: '',
-          ishas: true,
-          maintitle: '触摸事件包括以下哪几种？（多选）',
-          maincontent: ['touchesBegan', 'touchesMoved', 'touchesCancelled', 'touchesEnded'],
-          dianzan: 'iconfont icon-icon_good',
-          dianzannum: '96',
-          icondesc: 'iconfont icon-jiahao1',
-          contwen: '知识点',
-          iconxin: 'iconfont icon-bixin',
-          iconxintitle: 'Get'
-        },
-        {
-          id: 'F003',
-          rticon: 'iconfont icon-1',
-          rttitle: '优质内容',
-          titleleft: 'Java工程师面试考点',
-          iconmore: 'iconfont icon-more',
-          userimg: require('@/assets/imgs/006.jpg'),
-          iconvip: 'iconfont icon-vip',
-          userdis: '黄俊凯',
-          usertitle: 'Java 3年',
-          faxianmain: 'JavaScript的标准是ECMAScript 。截至 2012 年，所有浏览器都完整的支持ECMAScript 5.1，旧版本的浏览器至少支持ECMAScript 3 标准。2015年6月17日，ECMA国际组织发布了ECMAScript的第六版，该版本正式名称为 ECMAScript 2015，但通常被称为ECMAScript 6 或者ES6。',
-          defaultcha1: '查看更多>>',
-          defaultcha2: '收起',
-          chakan: true,
-          showcha: true,
-          iswenda: true,
-          wen: '问',
-          tiwen: '面试官问"对JavaScript的理解"时，该怎么回答？',
-          huida: '已有63个回答',
-          youbian: 'iconfont icon-youbian',
-          ishas: false,
-          maintitle: '',
-          maincontent: [],
-          dianzan: 'iconfont icon-icon_good',
-          dianzannum: '639',
-          icondesc: 'iconfont icon-xiaoxi2',
-          contwen: '我来回答',
-          iconxin: 'iconfont icon-bixin',
-          iconxintitle: 'Get'
-        }
-      ]
+      faxiancontent: []
     }
   },
   methods: {
+    getdata () {
+      this.$getdata('/api/mock.json').then(res => {
+        this.faxiancontent = res.faxiancontent
+      })
+    },
     chakanclick (index) {
       this.faxiancontent[index].showcha = !this.faxiancontent[index].showcha
       this.faxiancontent[index].chakan = !this.faxiancontent[index].chakan
     }
+  },
+  mounted () {
+    this.getdata()
   }
 }
 </script>
@@ -271,7 +189,6 @@ export default {
           color rgb(127,127,127)
       .faxian-main
         width 100%
-        padding-bottom .3rem
         .main
           width 100%
           line-height .6rem
