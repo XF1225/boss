@@ -3,11 +3,10 @@
     <div>
       <div class="detailtop">
        <div class="detailleft">
-         <li class="leftli" :class="{'active': istrue}" @click="leftliclick">搜职位</li>
-         <li class="leftli" :class="{'active': !istrue}" @click="leftliclick">搜公司</li>
+         <li class="leftli" :class="{'active': num === index}" v-for="(item,index) of detailleft" :key="item.id" @click="leftliclick(index)">{{item.name}}</li>
        </div>
        <div class="detailright">
-          <li class="rightli" :class="{'activeli':isactiveli}" @click="citychoiceclick"><span>上海</span><i></i></li>
+          <li class="rightli" :class="{'activeli':isactiveli}" @click="citychoiceclick"><span>{{city}}</span><i></i></li>
           <li class="rightli" @click="detailright"><span>筛选</span><i></i></li>
        </div>
       </div>
@@ -19,20 +18,35 @@
 
 <script>
 import { Bus } from '@/assets/js/bus'
+import { mapState } from 'vuex'
 import HomeContent from '../../Home/components/HomeContent'
 export default {
   name: 'searchdetail',
   components: { HomeContent },
   data () {
     return {
-      istrue: true,
+      num: 0,
       isactiveli: false,
-      showsearchdetail: false
+      showsearchdetail: false,
+      detailleft: [
+        {
+          id: 'D001',
+          name: '搜职位'
+        },
+        {
+          id: 'D002',
+          name: '搜公司'
+        }
+      ]
     }
   },
+  computed: {
+    ...mapState(['city'])
+  },
   methods: {
-    leftliclick () {
-      this.istrue = !this.istrue
+    leftliclick (i) {
+      this.num = i
+      Bus.$emit('scrollimg', false)
     },
     detailright () {
       this.$router.push('/shaixuan')

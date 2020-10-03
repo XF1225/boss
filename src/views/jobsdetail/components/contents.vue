@@ -39,8 +39,12 @@
         <div class="jinengfl">
           <li v-for="(items,index) of item.contkeys" :key="index">{{items}}</li>
         </div>
-        <div class="zhiweidetail">
-          {{zhiweidetail|ellipsis}}
+        <div :class="zhiwei==true?'zhiweidetail1':'zhiweidetail2'">
+          <p class="detail-title">工作职责：</p>
+          <p class="detail-desc" v-for="(item,index) of zhiweidetail" :key="index">{{item}}</p>
+          <div class="showmore" v-show="showzhiwei" @click="zhiweiclick">
+            <span class="chakanquanbu">查看全部</span>
+          </div>
         </div>
       </div>
       <div class="companydetail">
@@ -54,7 +58,7 @@
           </div>
           <span class="iconfont icon-youbian"></span>
         </div>
-        <Map class="Map"></Map>
+        <Map class="Map" :HomeContent="HomeContent"></Map>
       </div>
       <div class="wenxintishi">
         <div class="wxts">
@@ -91,29 +95,28 @@
         <input type="button" class="bottom-btn" value="立即沟通" @click="toliaotian(item.id)">
       </div>
     </div>
+    <fenxiang v-show="showfenxiang"></fenxiang>
   </div>
 </template>
 
 <script>
 import Map from '@/components/Map'
+import { Bus } from '../../../assets/js/bus'
+import fenxiang from '../../../components/fenxiang'
 export default {
   name: 'jobscontents',
-  components: { Map },
+  components: { Map, fenxiang },
   data () {
     return {
       HomeContent: [],
-      jinengfl: ['GIT', 'CSS', 'Vue.js', 'echarts', 'Webpack', 'H5', 'ES6'],
-      zhiweidetail: '工作职责:1、根据业务需求，完成页面编写，及前后端联调；2、根据业务需求，完成页面编写，及前后端联调；3、根据业务需求，完成页面编写，及前后端联调；任职资格:1、计算机相关专业及大专以上学历，互联网开发3年以上相关工作经验，至少参与过2个以上的移动端项目开发。2、计算机相关专业及大专以上学历，互联网开发3年以上相关工作经验，至少参与过2个以上的移动端项目开发。'
-    }
-  },
-  filters: {
-    // 超过20位显示...
-    ellipsis: function (value) {
-      if (!value) return ''
-      if (value.length > 100) {
-        return value.slice(0, 100) + '<a href="#">这是一个连接</a>'
-      }
-      return value
+      showfenxiang: false,
+      zhiwei: true,
+      showzhiwei: true,
+      zhiweidetail: [
+        '1.负责公司产品的前端开发、页面架构设计，与后台工程师协作完成数据交互，动态信息展现；',
+        '2.负责产品的交互效果开发，并能使用JS封装良好的前端交互组件，提高团队协作效率；',
+        '3.工作态度端正，能够积极主动去工作，高效推动项目完成，能够提供前端相关优化方案；'
+      ]
     }
   },
   activated () {
@@ -123,11 +126,27 @@ export default {
     getdata () {
       this.$getdata('/api/mock.json').then(res => {
         this.HomeContent = res.HomeContent.filter(item => item.id === this.$route.params.id)
+        Bus.$emit('conttitle', this.HomeContent[0].conttitle)
       })
     },
     toliaotian (id) {
       this.$router.push(`/liaotiandetail/${id}`)
+      window.scrollTo(0, 0)
+    },
+    zhiweiclick () {
+      this.zhiwei = this.showzhiwei = false
     }
+  },
+  mounted () {
+    Bus.$on('fenxiang', () => {
+      this.showfenxiang = true
+    })
+    Bus.$on('closefenxiang', () => {
+      this.showfenxiang = false
+    })
+    Bus.$on('chushihua', () => {
+      this.zhiwei = this.showzhiwei = true
+    })
   }
 }
 </script>
@@ -144,7 +163,7 @@ export default {
       padding .8rem 0 .3rem 0
       display flex
       flex-direction column
-      border-bottom solid .05rem rgb(245,245,245)
+      border-bottom solid .02rem rgb(230,230,230)
       .titleprice
         width 100%
         display flex
@@ -188,7 +207,7 @@ export default {
       flex-direction row
       justify-content space-between
       align-items center
-      border-bottom solid .05rem rgb(245,245,245)
+      border-bottom solid .02rem rgb(230,230,230)
       .desc-let
         width 80%
         display flex
@@ -232,7 +251,7 @@ export default {
       flex-direction column
       justify-content center
       align-items flex-start
-      border-bottom solid .05rem rgb(245,245,245)
+      border-bottom solid .02rem rgb(230,230,230)
     .jiangjinjixiao h4
       font-size .42rem
       padding-bottom .5rem
@@ -242,7 +261,7 @@ export default {
     .zhiweixiangqing
       width 100%
       padding-bottom .5rem
-      border-bottom solid .05rem rgb(245,245,245)
+      border-bottom solid .02rem rgb(230,230,230)
       .xiangqing
         width 100%
         height 1.2rem
@@ -259,15 +278,35 @@ export default {
         padding .15rem .2rem
         margin 0 .2rem .2rem 0
         border-radius .1rem
+        color rgb(87,87,87)
         background rgb(245,245,245)
-      .zhiweidetail
+      .zhiweidetail1
         width 100%
+        height 3.2rem
+        overflow hidden
+        position relative
+        font-size .35rem
+      .zhiweidetail2
+        width 100%
+        position relative
+        font-size .35rem
+      .zhiweidetail1 p,.zhiweidetail2 p
+        line-height .6rem
+      .showmore
+        width 100%
+        height .8rem
+        background linear-gradient(180deg,rgba(255,255,255,.6),#fff)
+        position absolute
+        left 0
+        bottom 0
         display flex
-        flex-direction row
-        flex-wrap wrap
+        justify-content center
+        align-items flex-end
+        .chakanquanbu
+          color #07ad9d
     .companydetail
       width 100%
-      border-bottom solid .05rem rgb(245,245,245)
+      border-bottom solid .02rem rgb(230,230,230)
       .com-detail
         width 100%
         height 2rem
@@ -315,7 +354,7 @@ export default {
     .wenxintishi
       width 100%
       padding-bottom .3rem
-      border-bottom solid .02rem rgb(245,245,245)
+      border-bottom solid .02rem rgb(230,230,230)
       .wxts
         width 100%
         height 1.5rem
@@ -384,7 +423,7 @@ export default {
           height .3rem
           line-height .3rem
           display inline-block
-          border-right solid .05rem white
+          border-right solid .02rem white
         .weizhitiao li:last-of-type
           border 0
         .tiaotitle

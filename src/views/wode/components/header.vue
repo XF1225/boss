@@ -14,7 +14,7 @@
         <div class="userimg" :style="header1"><img src="imgs/006.jpg"></div>
       </div>
       <div class="header-desc">
-        <li v-for="item of userdesc" :key="item.id" :style="header1">
+        <li v-for="item of wodeuserdesc" :key="item.id" :style="header1" @click="todetails(item.id)">
           <span>{{item.num}}</span>
           <i>{{item.title}}</i>
         </li>
@@ -58,28 +58,7 @@ export default {
   name: 'wodeheader',
   data () {
     return {
-      userdesc: [
-        {
-          id: 'w001',
-          num: '56',
-          title: '沟通过'
-        },
-        {
-          id: 'w002',
-          num: '3',
-          title: '面试'
-        },
-        {
-          id: 'w003',
-          num: '24',
-          title: '已投简历'
-        },
-        {
-          id: 'w004',
-          num: '5',
-          title: '收藏'
-        }
-      ],
+      wodeuserdesc: [],
       showheader: true,
       header1: {
         opacity: 1
@@ -90,6 +69,13 @@ export default {
     }
   },
   methods: {
+    getdata () {
+      this.$getdata('/api/mock.json').then(res => {
+        this.wodeuserdesc = res.wodeuserdesc
+        this.$set(this.wodeuserdesc[3], 'num', this.$store.state.shoucangID.length)
+        this.$set(this.wodeuserdesc[0], 'num', res.contents.length)
+      })
+    },
     scrolltop () {
       const top = document.documentElement.scrollTop || document.body.scrollTop
       if (top >= 0 && top <= 170) {
@@ -102,9 +88,17 @@ export default {
         this.header2 = { opacity }
         this.showheader = false
       }
+    },
+    todetails (id) {
+      if (id === 'w001') {
+        this.$router.push('/xiaoxi')
+      } else if (id === 'w004') {
+        this.$router.push('/ganxingqu')
+      }
     }
   },
   activated () {
+    this.getdata()
     addEventListener('scroll', this.scrolltop)
   },
   deactivated () {
@@ -116,7 +110,6 @@ export default {
       const opacity = 1
       this.header2 = { opacity }
     })
-    // console.log(this.$refs.headerheight.clientHeight)
   }
 }
 </script>

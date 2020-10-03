@@ -17,7 +17,7 @@
       </div>
       <div class="shoufeijubao" v-show="showjubao">
         <p>该BOSS所招聘过程中若向你收费，请举报。</p>
-        <span class="el-icon-close"></span>
+        <span class="el-icon-close" @click="closeclick"></span>
       </div>
     </div>
     <div class="kong">
@@ -63,6 +63,9 @@ export default {
   methods: {
     toup () {
       this.$router.go(-1)
+    },
+    closeclick () {
+      this.showjubao = false
     }
   }
 }
@@ -96,7 +99,7 @@ export default {
       align-items center
     .hdesc h4
       font-size .4rem
-      padding-bottom .1rem
+      padding-bottom .15rem
     .hdesc p
       font-size .32rem
       color rgb(87,87,87)

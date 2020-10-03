@@ -7,7 +7,7 @@
           <span class="iconfont icon-search">&#xe629;</span>
           <input type="text" class="faxian-text" placeholder="搜索职位/公司/知识点" @click="tosousuozhiwei">
         </div>
-        <span class="iconfont icon-xiaoxi">&#xe618;</span>
+        <router-link tag='span' to="suoyoutongzhi" class="iconfont icon-xiaoxi" >&#xe618;</router-link>
         <div class="userimg"><img src="imgs/006.jpg"></div>
       </div>
     </div>

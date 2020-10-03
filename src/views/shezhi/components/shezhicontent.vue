@@ -8,8 +8,20 @@
         </div>
       </div>
       <div class="outlogin">
-        <div class="tuichu">
+        <div class="tuichu" @click="confromclick">
           <input type="button" class="tcdl" value="退出登录">
+        </div>
+      </div>
+      <div class="confrom" v-show="confrom" @touchmove.prevent>
+        <div class="wenxintishi">
+          <div class="details">
+            <h4 class="details-h4">温馨提示</h4>
+            <p class="details-p">确定要退出登录？</p>
+            <div class="details-div">
+              <p class="quxiao" @click="cancel">取消</p>
+              <p class="queding" @click="sure">确定</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,18 +90,31 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      confrom: false
     }
   },
   methods: {
     todetail (id) {
       this.$router.push(`/shezhidetail/${id}`)
+    },
+    confromclick () {
+      this.confrom = true
+    },
+    cancel () {
+      this.confrom = false
+    },
+    sure () {
+      this.confrom = false
+      localStorage.removeItem('token')
+      location.reload()
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+@import '../../../assets/css/common.styl'
 .shezhicontent
   width 100%
   .detail
@@ -138,4 +163,41 @@ export default {
           background rgb(245,245,245)
           outline none
           font-size .45rem
-</style>>
+    .confrom
+      width 100%
+      height 100vh
+      position fixed
+      left 0
+      top 0
+      background rgba(0,0,0,.6)
+      z-index 3
+      display flex
+      justify-content center
+      align-items center
+      .wenxintishi
+        width 85%
+        background white
+        .details
+          width 90%
+          margin 0 auto
+          .details-h4
+            margin-top .3rem
+            line-height 1.5rem
+            font-size .5rem
+          .details-p
+            font-size .38rem
+            color rgb(87,87,87)
+          .details-div
+            margin-top .5rem
+            height 1.5rem
+            display flex
+            flex-direction row
+            justify-content flex-end
+            align-items center
+            font-size .4rem
+            .quxiao
+              color rgb(127,127,127)
+              margin-right .5rem
+            .queding
+              color $bgColor
+</style>

@@ -4,7 +4,7 @@
       <div class="xiaoxicontent">
         <li :class="num == index?'active':''" class="xiaoxili" v-for="(item,index) of xiaoxili" :key="index" @click="xiaoxiclick(index)">{{item.name}}</li>
       </div>
-      <span class="iconfont">&#xe618;</span>
+      <router-link tag='span' to="suoyoutongzhi" class="iconfont icon-xiaoxi" >&#xe618;</router-link>
     </div>
     <div class="kong"></div>
   </div>

@@ -101,6 +101,21 @@ const routes = [
     path: '/liaotiandetail/:id',
     name: 'liaotiandetail',
     component: () => import('../views/liaotiandetail/liaotiandetail')
+  },
+  {
+    path: '/suoyoutongzhi',
+    name: 'suoyoutongzhi',
+    component: () => import('../views/suoyoutongzhi/suoyoutongzhi')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/login/login')
+  },
+  {
+    path: '/ganxingqu',
+    name: 'ganxingqu',
+    component: () => import('../views/ganxingqu/ganxingqu')
   }
 ]
 const router = new VueRouter({

@@ -9,7 +9,7 @@
           </div>
           <div class="nav-right">
             <div class="right-content">
-              <li :class="{'activeli':isactiveli}" @click="citychoiceclick"><span>上海</span><i></i></li>
+              <li :class="{'activeli':isactiveli}" @click="citychoiceclick"><span>{{city}}</span><i></i></li>
               <li v-for="item of navright" :key="item.id" @click="navrightclick(item.id)"><span>{{item.name}}</span><i></i></li>
             </div>
           </div>
@@ -20,6 +20,7 @@
 </template>
 <script>
 import { Bus } from '@/assets/js/bus'
+import { mapState } from 'vuex'
 export default {
   name: 'HomeNav',
   data () {
@@ -37,6 +38,9 @@ export default {
       showgengxin: true,
       isactiveli: false
     }
+  },
+  computed: {
+    ...mapState(['city'])
   },
   methods: {
     navleftclick (index) {

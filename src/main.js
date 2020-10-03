@@ -42,6 +42,14 @@ Vue.directive('focus', {
   }
 })
 
+router.beforeEach((to, from, next) => {
+  if (to.path !== '/login' && JSON.parse(localStorage.getItem('token')) === null) {
+    next('/login')
+  } else {
+    next()
+  }
+})
+
 new Vue({
   router,
   axios,

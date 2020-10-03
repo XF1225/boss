@@ -4,11 +4,12 @@
       <div class="contents">
         <div class="cont-left">
           <span class="el-icon-arrow-left" @click="toreturn"></span>
-          <p class="cont-p" :style="popacity">前端开发工程师</p>
+          <p class="cont-p" :style="popacity">{{title}}</p>
         </div>
         <div class="cont-right">
-          <span class="iconfont icon-xing"></span>
-          <span class="iconfont icon-fenxiang"></span>
+          <span class="iconfont icon-xing" v-show="showxing" @click="xingclick"></span>
+          <span class="iconfont icon-iconfontxingxing" v-show="!showxing" @click="xingclick"></span>
+          <span class="iconfont icon-fenxiang" @click="fenxiangclick"></span>
           <span class="iconfont icon-gantanhao-xianxingsanjiaokuang"></span>
         </div>
       </div>
@@ -18,14 +19,34 @@
 </template>
 
 <script>
+import { Bus } from '../../../assets/js/bus'
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'jobsheader',
   data () {
     return {
       popacity: {
         opacity: 0
+      },
+      title: '',
+      checkbox: []
+    }
+  },
+  computed: {
+    ...mapState(['shoucangID']),
+    showxing () {
+      const ID = this.$route.params.id
+      if (this.shoucangID.indexOf(ID) === -1) {
+        return true
+      } else {
+        return false
       }
     }
+  },
+  mounted () {
+    Bus.$on('conttitle', (conttitle) => {
+      this.title = conttitle
+    })
   },
   methods: {
     isscroll () {
@@ -40,7 +61,16 @@ export default {
     },
     toreturn () {
       this.$router.go(-1)
-    }
+      Bus.$emit('chushihua', true)
+    },
+    fenxiangclick () {
+      Bus.$emit('fenxiang', true)
+    },
+    xingclick () {
+      const ID = this.$route.params.id
+      this.shoucang(ID)
+    },
+    ...mapMutations(['shoucang'])
   },
   activated () {
     addEventListener('scroll', this.isscroll)
@@ -81,6 +111,8 @@ export default {
         font-size .6rem
         padding-left .3rem
         color rgb(87,87,87)
+      .icon-iconfontxingxing
+        color #FFC107
       .icon-fenxiang
         font-size .5rem
 .kong

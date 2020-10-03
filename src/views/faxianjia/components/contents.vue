@@ -67,6 +67,9 @@ export default {
     toup () {
       this.$router.go(-1)
     }
+  },
+  mounted () {
+    window.scrollTo(0, 0)
   }
 }
 </script>

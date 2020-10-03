@@ -95,7 +95,7 @@ export default {
   methods: {
     initscroll () {
       if (!this.scroll) {
-        this.scroll = new Bscroll(this.$refs.wrapper, { probeType: 3 })
+        this.scroll = new Bscroll(this.$refs.wrapper, { probeType: 3, click: true })
         this.scroll.on('scroll', (pos) => {
           if (Math.abs(pos.y) > 180) {
             Bus.$emit('getshowheader', false)
@@ -115,7 +115,7 @@ export default {
 <style lang="stylus" scoped>
 .wrapper
   width 100%
-  height 6.5rem
+  height 6rem
   position absolute
   top 7.5rem
 .wrapper div

@@ -8,7 +8,8 @@
         "contconp": "网联商务",
         "conpnum": "100-499人",
         "contp": "张亚茹.人事专员",
-        "area": "北京",
+        "area": "北京 朝阳区",
+        "jingweidu": {"lng":116.511078,"lat":39.954697},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -29,6 +30,7 @@
         "conpnum": "0-20人",
         "contp": "孙颖.人力资源",
         "area": "天津 武清区 北郊",
+        "jingweidu": {"lng":117.234597,"lat":39.569374},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -48,7 +50,8 @@
         "contconp": "上海三高计算机 已上市",
         "conpnum": "500-999人",
         "contp": "Ariei.人事",
-        "area": "上海",
+        "area": "上海 闸北区",
+        "jingweidu": {"lng":121.466538,"lat":31.283251},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -69,6 +72,7 @@
         "conpnum": "500-999人",
         "contp": "文盼.招聘者",
         "area": "重庆 江北区 观音桥",
+        "jingweidu": {"lng":106.53324,"lat":29.587194},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -89,6 +93,7 @@
         "conpnum": "1000-9999人",
         "contp": "郑女士.HR",
         "area": "哈尔滨 道里区",
+        "jingweidu": {"lng":126.41326,"lat":45.701615},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -109,6 +114,7 @@
         "conpnum": "0-20人",
         "contp": "sunny.人事专员",
         "area": "吉林 昌邑区",
+        "jingweidu": {"lng":126.435975,"lat":43.987355},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -129,6 +135,7 @@
         "conpnum": "20-99人",
         "contp": "王利达.经理",
         "area": "沈阳 沈河区 市府",
+        "jingweidu": {"lng":123.447708,"lat":41.811632},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -149,6 +156,7 @@
         "conpnum": "1000-9999人",
         "contp": "刘璇.人资专员",
         "area": "呼和浩特",
+        "jingweidu": {"lng":111.765537,"lat":40.848881},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -169,6 +177,7 @@
         "conpnum": "1000-9999人",
         "contp": "贾女士.招聘主管",
         "area": "乌鲁木齐",
+        "jingweidu": {"lng":87.61293,"lat":43.85039},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -189,6 +198,7 @@
         "conpnum": "0-20人",
         "contp": "阳春花.经理",
         "area": "西宁 城西区",
+        "jingweidu": {"lng":101.777124,"lat":36.633446},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -209,6 +219,7 @@
         "conpnum": "100-499人",
         "contp": "张先生.项目经理",
         "area": "银川 西夏区",
+        "jingweidu": {"lng":106.105295,"lat":38.485328},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -229,6 +240,7 @@
         "conpnum": "10000人以上",
         "contp": "胥虹颖.招聘主管",
         "area": "兰州 城关区",
+        "jingweidu": {"lng":103.869982,"lat":36.058185},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -249,6 +261,7 @@
         "conpnum": "100-499人",
         "contp": "魏颖慧.HRBP",
         "area": "西安",
+        "jingweidu": {"lng":108.967378,"lat":34.317638},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -269,6 +282,7 @@
         "conpnum": "500-999人",
         "contp": "梁女士.招聘专家",
         "area": "太原",
+        "jingweidu": {"lng":112.571488,"lat":37.844854},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -289,6 +303,7 @@
         "conpnum": "20-99人",
         "contp": "周阳.互联网运营经理",
         "area": "石家庄",
+        "jingweidu": {"lng":114.548838,"lat":38.042629},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -309,6 +324,7 @@
         "conpnum": "100-499人",
         "contp": "范经理",
         "area": "郑州 二七区 大学路",
+        "jingweidu": {"lng":113.649078,"lat":34.724271},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -329,6 +345,7 @@
         "conpnum": "20-99人",
         "contp": "冯承敏.人力资源主管",
         "area": "济南",
+        "jingweidu": {"lng":117.127764,"lat":36.651516},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -349,6 +366,7 @@
         "conpnum": "100-499人",
         "contp": "黄磊.HRBP",
         "area": "合肥",
+        "jingweidu": {"lng":117.284069,"lat":31.856363},
         "titlebottom": [
           {
             "icon": "iconfont icon-zhaopin_zhichang",
@@ -1486,6 +1504,37 @@
       "id": "G098",
       "title": "接口数据",
       "checked": false
+    }
+  ],
+  "wodeuserdesc": [
+    {
+      "id": "w001",
+      "num": "56",
+      "title": "沟通过"
+    },
+    {
+      "id": "w002",
+      "num": "2",
+      "title": "面试"
+    },
+    {
+      "id": "w003",
+      "num": "24",
+      "title": "已投简历"
+    },
+    {
+      "id": "w004",
+      "num": "5",
+      "title": "收藏"
+    }
+  ],
+  "users": [
+    {
+      "id":"U00110221",
+      "username":"张秋千",
+      "phone":"15814414627",
+      "password":"asdfgh",
+      "token":""
     }
   ]
 }
