@@ -44,6 +44,9 @@ export default {
   },
   methods: {
     navleftclick (index) {
+      if (this.num === index) {
+        return false
+      }
       this.num = index
       switch (this.navleft[index].id) {
         case 'nav01':

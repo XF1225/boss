@@ -38,7 +38,7 @@
         </div>
         <div class="cont-bottom">
           <div class="bottom-left">
-            <div class="dianzan">
+            <div class="dianzan" @click.once="dianzan(item.dianzannum)">
               <span :class="item.dianzan"></span>
               <p>{{item.dianzannum}}</p>
             </div>
@@ -62,7 +62,8 @@ export default {
   name: 'faxiancontent',
   data () {
     return {
-      faxiancontent: []
+      faxiancontent: [],
+      dianzanclick: true
     }
   },
   methods: {
@@ -74,6 +75,13 @@ export default {
     chakanclick (index) {
       this.faxiancontent[index].showcha = !this.faxiancontent[index].showcha
       this.faxiancontent[index].chakan = !this.faxiancontent[index].chakan
+    },
+    dianzan (num) {
+      for (let i = 0; i < this.faxiancontent.length; i++) {
+        if (this.faxiancontent[i].dianzannum === num) {
+          this.$set(this.faxiancontent[i], 'dianzannum', Number(num) + 1)
+        }
+      }
     }
   },
   mounted () {

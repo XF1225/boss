@@ -1,13 +1,16 @@
 <template>
-  <div class="sousuoheader">
-    <div class="details">
-      <div class="sousuoleft" :class="animates === true ? 'animated slideOutLeft' : ''">
-        <i class="el-icon-search"></i>
-        <input type="text" class="sousuoipt" placeholder="搜索职位/公司/知识点" v-model="inptval" v-focus>
-        <i class="el-icon-close" v-show="showclose" @click="close"></i>
+  <div>
+    <div class="sousuoheader">
+      <div class="details">
+        <div class="sousuoleft" :class="animates === true ? 'animated slideOutLeft' : ''">
+          <i class="el-icon-search"></i>
+          <input type="text" class="sousuoipt" placeholder="搜索职位/公司/知识点" v-model="inptval" v-focus>
+          <i class="el-icon-close" v-show="showclose" @click="close"></i>
+        </div>
+        <span class="quxiao" @click="toback">取消</span>
       </div>
-      <span class="quxiao" @click="toback">取消</span>
     </div>
+    <div class="kong"></div>
   </div>
 </template>
 
@@ -59,6 +62,8 @@ export default {
 .sousuoheader
   width 100%
   height 2rem
+  background white
+  position fixed
   .details
     width 90%
     height 2rem
@@ -98,4 +103,7 @@ export default {
       right 0
     .quxiaoanimate
       animation anime .5s ease
+.kong
+  width 100%
+  height 2rem
 </style>

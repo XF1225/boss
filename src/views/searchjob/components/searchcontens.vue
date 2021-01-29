@@ -2,7 +2,7 @@
   <div class="searchcontens" v-show="showsearchcontens">
     <div class="details">
       <div class="main">
-        <li v-for="(item,index) of maindetail" :style="item.bgcolor" :key="index">{{item.title}}</li>
+        <li v-for="(item,index) of maindetail" :style="item.bgcolor" :key="index" @click="mainclick(index)">{{item.title}}</li>
       </div>
       <div class="lishisousuo" v-show="this.list.length">
         <div class="lishitop">
@@ -77,6 +77,11 @@ export default {
     })
   },
   methods: {
+    mainclick (index) {
+      Bus.$emit('changeshow', false)
+      Bus.$emit('scrollimg', false)
+      Bus.$emit('changeinpt', this.maindetail[index].title)
+    },
     listclick (index) {
       if (this.list.length <= 1) {
         Bus.$emit('changeshow', false)
