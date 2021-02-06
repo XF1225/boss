@@ -8,4 +8,5 @@ vue中axios封装：新建request.js，添加请求拦截器service.interceptors
 上传到GitHub中解决的问题：error: failed to push some refs to 'https://github.com/XF1225/boss.git' 0@DESKTOP-J7AJ10J MINGW64 ~/desktop/boss (main) $ git branch default 0@DESKTOP-J7AJ10J MINGW64 ~/desktop/boss (main) $ git push -u origin default -f （解决办法链接：https://blog.csdn.net/henusyb/article/details/89385386?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.control）
 如何在GitHub部署自己的个人网站：https://www.cnblogs.com/civil/p/10153646.html
 Github怎么创建文件夹：https://blog.csdn.net/WILDCHAP_/article/details/107596157
+解决https://xf1225.github.io/api/mock.json报错404的问题：同样新建一个api仓库，上传mock.json等数据后，在GitHub page那设置生成https://xf1225.github.io/api访问链接即可解决。
 使用到的技术：better-scroll实现下拉刷新，上拉加载，百度地图api，axios封装，localstorage缓存的使用，element-ui库的使用等。
