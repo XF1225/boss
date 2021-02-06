@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/XF1225/boss/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/XF1225/boss/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+boss项目
+项目搭建：（vue-cli3用）vue create boss（vue-cli2用）vue init webpack boss
+统一项目样式以及解决一像素边框问题，网上下载reset.css和border.css并在main.js引入，比如import './assets/css/reset.css'，在index.html中添加maximum-scale=1.0, minimum-scale=1.0,user-scalable=no
+vue中axios封装：新建request.js，添加请求拦截器service.interceptors.request.use(config=>{}),添加响应拦截器service.interceptors.response.use(response=>{}),封装get方法export function getdata(url,params){return new promise((resolve,reject)=>{axios.get(url,{params:params}).then(response=>{resolve(response.data)}).catch(err=>{reject(err)})})},在main.js引入getdata import {getdata} from './utils/request'，vue。prototype.$getdata=getdata
+使用百度地图api：先申请百度地图ak，然后安装百度地图插件vue-baidu-map并在main.js中引入 import BaiduMap from 'vue-baidu-map'，vue.use(BaiduMap ,{ak:'申请的ak'})在public/index.html里添加ak,创建公共的map.vue
+使用better-scroll实现下拉刷新，上拉加载：先安装依赖 cnpm i better-scroll --save（不需要在main.js中引入 ）在需要在组件中先引入better-scroll，在mounted中加入this.srcoll=new Bscroll(this.$refs.wrapper,{probeType:3,click:true})
+项目打包：npm run build
+上传到GitHub中解决的问题：error: failed to push some refs to 'https://github.com/XF1225/boss.git' 0@DESKTOP-J7AJ10J MINGW64 ~/desktop/boss (main) $ git branch default 0@DESKTOP-J7AJ10J MINGW64 ~/desktop/boss (main) $ git push -u origin default -f （解决办法链接：https://blog.csdn.net/henusyb/article/details/89385386?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.control）
+如何在GitHub部署自己的个人网站：https://www.cnblogs.com/civil/p/10153646.html
+Github怎么创建文件夹：https://blog.csdn.net/WILDCHAP_/article/details/107596157
+使用到的技术：better-scroll实现下拉刷新，上拉加载，百度地图api，axios封装，localstorage缓存的使用，element-ui库的使用等。
